@@ -19,6 +19,16 @@ h1 {
     @include all-phone {
         font-size: 42px;
     }
+
+    @include screen-1400{
+        font-size: 96px;
+    }
+    @include screen-1200{
+        font-size: 78px;
+    }
+    @include desktop{
+        font-size: 60px;
+    }
 }
 
 h2 {
@@ -31,6 +41,9 @@ h2 {
     }
     @include all-phone {
         font-size: 36px;
+    }
+    @include all-desktop{
+        font-size: 48px;
     }
 }
 
@@ -49,6 +62,10 @@ h4 {
     @include all-phone {
         font-size: 24px;
     }
+    @include desktop {
+        font-size: 28px;
+    }
+    
 }
 
 h5 {

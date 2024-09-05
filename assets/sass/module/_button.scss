@@ -35,20 +35,20 @@
     }
 }
 
-.secondary-btn {
-    h3 {
-        text-transform: capitalize;
-    }
+// .secondary-btn {
+//     h3 {
+//         text-transform: capitalize;
+//     }
 
-    display: flex;
-    gap: 15px;
-    align-items: center;
+//     display: flex;
+//     gap: 15px;
+//     align-items: center;
 
-    img {
-        width: 30px;
-        height: 30px;
-    }
-}
+//     img {
+//         width: 30px;
+//         height: 30px;
+//     }
+// }
 
 .case-3-btn {
     font-weight: 600;
@@ -66,11 +66,11 @@
     }
 }
 
-.secondary-btn-2{
+.secondary-btn{
     display: flex;
     align-items: center;
     justify-content: center;
     span{
-        font-size: 30px;
+        font-size: 44px;
     }
 }

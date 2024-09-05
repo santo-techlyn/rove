@@ -56,7 +56,6 @@
             speed: 3000,
             autoplay: {
                 delay: 1,
-                // reverseDirection: true
             },
             loop: true,
             slidesPerView: 'auto',

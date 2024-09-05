@@ -15,13 +15,47 @@
             position: absolute;
             top: 40px;
 
+            @include screen-1200 {
+                top: 20px;
+            }
+
+            @include desktop {
+                top: 25px;
+                width: 60px;
+            }
+
             &.hero-shape-2 {
                 left: -50px;
+
+                @include screen-1400 {
+                    left: 13px;
+                }
+
+                @include screen-1200 {
+                    left: 18px;
+                }
+
+                @include desktop {
+                    left: 25px;
+                }
             }
 
             &.arrow-vector-1 {
                 right: -50px;
+
+                @include screen-1400 {
+                    right: -13px;
+                }
+
+                @include screen-1200 {
+                    right: 5px;
+                }
+
+                @include desktop {
+                    right: 25px;
+                }
             }
+
         }
     }
 
@@ -49,22 +83,30 @@
     }
 }
 
-.animated-image-area {
-    .animated-image {
-        width: 650px;
-        height: 780px;
-        background: url('../images/animated-image.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: auto;
-        margin: auto;
-    }
-}
+// .animated-image-area {
+//     .animated-image {
+//         width: 650px;
+//         height: 780px;
+//         background: url('../images/animated-image.png');
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: auto;
+//         margin: auto;
+//     }
+// }
 
 .about-area {
     .about-content {
         p:nth-child(2) {
             margin-bottom: 150px;
+
+            @include screen-1200 {
+                margin-bottom: 50px;
+            }
+
+            @include desktop {
+                margin-bottom: 50px;
+            }
         }
     }
 }
@@ -98,6 +140,10 @@
     .counter-text {
         width: 40%;
         margin: auto;
+
+        @include desktop {
+            width: 80%;
+        }
     }
 }
 
@@ -152,16 +198,41 @@
                 visibility: visible;
                 height: 400px;
                 top: -200px;
+
+                @include tablet {
+                    height: 340px;
+                }
+                @include desktop {
+                    height: 315px;
+                    top: -160px;
+                }
             }
         }
     }
 
     .service-title {
         width: 90%;
+
+        @include screen-1200 {
+            width: 100%;
+        }
+
+        @include desktop {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
     }
 
     .service-image {
         position: relative;
+
+        @include tablet {
+            width: 300px;
+            left: 420px;
+        }
 
         &::before {
             content: '';
@@ -181,6 +252,11 @@
     }
 
     ul {
+        @include tablet {
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
         li {
             list-style: disc;
             margin: 15px 0;
@@ -195,6 +271,12 @@
         border-radius: 50%;
         text-align: center;
         margin-left: auto;
+
+
+        @include tablet {
+            margin-left: 10px;
+            margin-top: 20px;
+        }
 
         img {
             width: auto;
@@ -279,6 +361,10 @@
         font-weight: 400;
         font-style: italic;
         display: inline-block;
+
+        @include desktop {
+            font-size: 30px;
+        }
     }
 
     .client-part {
@@ -287,6 +373,14 @@
         justify-content: center;
         gap: 15px;
         margin-bottom: 150px;
+
+        @include screen-1200 {
+            margin-bottom: 100px;
+        }
+
+        @include desktop {
+            margin-bottom: 100px;
+        }
 
         .client-image {
             img {
@@ -316,6 +410,11 @@
         right: 45%;
         top: 96%;
 
+        @include desktop {
+            right: 42%;
+            top: 90%;
+        }
+
         &::after {
             display: none;
         }
@@ -326,6 +425,11 @@
         position: absolute;
         left: 45%;
         top: 96%;
+
+        @include desktop {
+            left: 42%;
+            top: 90%;
+        }
 
         img {
             transform: rotate(180deg);
@@ -406,6 +510,12 @@
 
     &.active {
         display: block;
+    }
+}
+
+.contact-area {
+    .contact-image {
+        margin-left: 30px;
     }
 }
 
@@ -1071,6 +1181,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        &:first-child {
+            margin-right: 200px;
+        }
+
+        &:last-child {
+            margin-left: 200px;
+        }
     }
 
 }

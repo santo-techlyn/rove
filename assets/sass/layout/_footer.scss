@@ -41,12 +41,12 @@
 
             &::placeholder {
                 color: $secondary-color;
-                padding-left: 80px;
+                padding-left: 70px;
                 font-size: 18px;
-            }
 
-            &::placeholder {
-                padding-right: 20px;
+                @include desktop {
+                    padding-left: 10px;
+                }
             }
         }
 
@@ -68,6 +68,10 @@
         .text-marquee {
             border: 0;
             padding: 80px 0;
+
+            @include desktop {
+                padding: 40px 0;
+            }
 
             .swiper-slide {
                 font-size: 200px;

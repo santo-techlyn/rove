@@ -5,15 +5,27 @@
             display: flex;
             gap: 50px;
             margin-bottom: 30px;
+            @include screen-1200{
+                gap: 30px;
+            }
+            @include desktop{
+                gap: 20px;
+            }
+
 
             label {
                 width: 280px;
-
                 font-size: 30px;
                 font-weight: 500;
 
                 @include all-phone {
                     font-size: 24px;
+                }
+                @include screen-1200{
+                    width: 330px;
+                }
+                @include desktop{
+                    width: 425px;
                 }
             }
 
