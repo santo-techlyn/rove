@@ -686,20 +686,6 @@ nav .main-menu li a {
   background-position: left bottom;
 }
 
-.anchor-btn {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  border-bottom: 1px solid #141414;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-transform: capitalize;
-}
-.anchor-btn img.arrow-vector-2 {
-  width: 12px;
-  height: 12px;
-}
-
 .case-3-btn {
   font-weight: 600;
   font-size: 16px;
@@ -722,6 +708,43 @@ nav .main-menu li a {
 }
 .secondary-btn span {
   font-size: 44px;
+}
+
+.anchor-btn {
+  position: relative;
+  background: linear-gradient(90deg, #141414 50%, #000000 50%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.anchor-btn img.arrow-vector-2 {
+  width: 15px;
+  height: 15px;
+  transition: all 0.5s ease-in;
+}
+.anchor-btn:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #141414;
+  transition: all 0.5s ease-in;
+}
+.anchor-btn:hover img.arrow-vector-2 {
+  transform: rotate(45deg);
+  transition: all 0.5s ease-in;
+}
+.anchor-btn:hover:after {
+  right: 0;
+  width: 100%;
 }
 
 /* cursor */
@@ -1351,6 +1374,7 @@ nav .main-menu li a {
 }
 .hero-area .hero-title img.arrow-vector-1 {
   right: -50px;
+  margin-top: 15px;
 }
 @media (min-width: 1400px) and (max-width: 1919.98px) {
   .hero-area .hero-title img.arrow-vector-1 {
@@ -1417,6 +1441,7 @@ nav .main-menu li a {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 @media (max-width: 575.98px) {
   .counter-single span.counter,
@@ -1434,10 +1459,18 @@ nav .main-menu li a {
     width: 80%;
   }
 }
+.counter-single:hover span.counter,
+.counter-single:hover span.plus-sign {
+  -webkit-text-fill-color: #141414;
+  transition: all 0.5s ease-in;
+}
 
 .section-top {
   padding-bottom: 30px;
   border-bottom: 1px solid #B0B0B0;
+}
+.section-top p {
+  margin-bottom: 10px;
 }
 
 .case-single {
@@ -1547,6 +1580,11 @@ nav .main-menu li a {
   border-radius: 50%;
   text-align: center;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .service-single .service-btn {
@@ -1554,12 +1592,20 @@ nav .main-menu li a {
     margin-top: 20px;
   }
 }
-.service-single .service-btn img {
-  width: auto;
-  margin: 25px auto 5px;
-}
 .service-single .service-btn span {
   text-transform: capitalize;
+}
+.service-single .service-btn svg path {
+  transition: all 0.3s ease-in;
+}
+.service-single .service-btn:hover {
+  background-color: #141414;
+  color: #ffffff;
+  transition: all 0.3s ease-in;
+}
+.service-single .service-btn:hover svg path {
+  fill: #ffffff;
+  transition: all 0.3s ease-in;
 }
 
 .brand-area .brand-items {
