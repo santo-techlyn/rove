@@ -1507,6 +1507,11 @@ nav .main-menu li a {
 }
 .case-single .case-image {
   position: relative;
+  overflow: hidden;
+}
+.case-single .case-image .case-main-img {
+  transform: scale(1);
+  transition: all 0.3s ease-in;
 }
 .case-single .case-image .hover-state {
   position: absolute;
@@ -1523,6 +1528,10 @@ nav .main-menu li a {
 .case-single .case-image:hover .hover-state {
   opacity: 1;
   visibility: visible;
+}
+.case-single .case-image:hover .case-main-img {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in;
 }
 .case-single .text-rotat {
   position: relative;

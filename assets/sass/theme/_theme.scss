@@ -175,6 +175,12 @@
 
     .case-image {
         position: relative;
+        overflow: hidden;
+
+        .case-main-img{
+            transform: scale(1);
+            transition: $transition;
+        }
 
         .hover-state {
             position: absolute;
@@ -194,6 +200,10 @@
             .hover-state {
                 opacity: 1;
                 visibility: visible;
+            }
+            .case-main-img{
+                transform: scale(1.05);
+                transition: $transition;
             }
         }
     }
