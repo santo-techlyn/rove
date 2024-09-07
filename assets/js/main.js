@@ -264,15 +264,81 @@
             },
         });
 
-        //tab
-        $('.tab-link').on('click', function (event) {
-            event.preventDefault(); // Prevent the default action of the <a> tag
+        //test
+        const degreeToRadian = (angle) => {
+            return angle * (Math.PI / 180);
+        };
+        
+        const radius = 80;
+        const diameter = radius * 2;
+        
+        // Get all elements with the class "circle"
+        const circles = document.querySelectorAll(".circle");
+        
+        circles.forEach(circle => {
+            circle.style.width = `${diameter}px`;
+            circle.style.height = `${diameter}px`;
+        
+            const text = circle.dataset.text;
+            const characters = text.split("");
+        
+            const deltaAngle = 360 / characters.length;
+            const characterOffsetAngle = 8;
+            let currentAngle = -90;
+        
+            characters.forEach((character, index) => {
+                const span = document.createElement("span");
+                span.innerText = character;
+        
+                const xPos = radius * (1 + Math.cos(degreeToRadian(currentAngle)));
+                const yPos = radius * (1 + Math.sin(degreeToRadian(currentAngle)));
+        
+                const transform = `translate(${xPos}px, ${yPos}px)`;
+                const rotate = `rotate(${(index * deltaAngle) + characterOffsetAngle}deg)`;
+                span.style.transform = `${transform} ${rotate}`;
+        
+                currentAngle += deltaAngle;
+                circle.appendChild(span);
+            });
+        });
+        
+          
+
+
+        //copy email
+        document.getElementById('copy-email').addEventListener('click', function () {
+            // Get the email text
+            var email = this.innerText;
+
+            // Copy the email to the clipboard using Clipboard API
+            navigator.clipboard.writeText(email).then(function () {
+                // Successfully copied to clipboard
+                var copyStatus = document.getElementById('copyStatus');
+                var clickStatus = document.getElementById('clickStatus');
+                copyStatus.style.display = 'inline'; // Show the "Copied!" message
+                clickStatus.style.display = 'none'; // Show the "Copied!" message
+
+                // Hide the message after 2 seconds
+                // setTimeout(function() {
+                //     copyStatus.style.display = 'none';
+                // }, 2000);
+            }).catch(function (err) {
+                // Handle error if unable to copy
+                console.error('Could not copy text: ', err);
+            });
+        });
+
+        //award hocer function
+        $('.tab-link').on('mouseenter', function (event) {
+            event.preventDefault(); // Prevent default action if necessary
 
             var tab_id = $(this).attr('data-tab');
 
+            // Remove 'active' class from all tabs and content
             $('.tab-link').removeClass('active');
             $('.tab-content').removeClass('active');
 
+            // Add 'active' class to the hovered tab and the corresponding content
             $(this).addClass('active');
             $("#" + tab_id).addClass('active');
         });

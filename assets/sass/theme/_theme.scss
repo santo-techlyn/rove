@@ -198,6 +198,56 @@
             }
         }
     }
+
+    .text-rotat {
+        position: relative;
+        .text-rotat-icon {
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+            background-color: transparent;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            border: 20px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            span {
+                font-size: 55px;
+            }
+        }
+    
+        .circle {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            top: 5px;
+            left: -5px;
+            position: relative;
+            border-radius: 100%;
+            padding: 16px;
+            animation: rotate-animation 8s infinite linear;
+            color: white;
+            font-size: 16px;
+        }
+    
+        .circle span {
+            position: absolute;
+            transform-origin: top left;
+        }
+    
+        @keyframes rotate-animation {
+            from {
+                transform: rotate(0);
+            }
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+    }
+    
 }
 
 .service-single {
@@ -436,6 +486,7 @@
     .swiper {
         position: relative;
         padding-bottom: 150px;
+        max-width: 1320px;
     }
 
     .swiper-button-next {
@@ -517,7 +568,7 @@
             }
 
             &.active {
-                font-weight: 600;
+                // font-weight: 600;
                 color: $primary-color;
                 cursor: pointer;
             }
