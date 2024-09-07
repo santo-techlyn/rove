@@ -1,6 +1,5 @@
 /* theme */
 .hero-area {
-    padding: 150px 0;
     background: url('../images/hero-bg-shape.png');
     background-repeat: no-repeat;
     background-position: right;
@@ -201,53 +200,30 @@
 
     .text-rotat {
         position: relative;
-        .text-rotat-icon {
-            border-radius: 50%;
-            height: 120px;
-            width: 120px;
-            background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
             position: absolute;
-            top: 20px;
-            left: 10px;
-            border: 20px solid;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    
-            span {
-                font-size: 55px;
+            animation: rotateText  10s linear infinite ;
+        }
+
+        span {
+            position: absolute;
+            font-size: 50px;
+        }
+
+        @keyframes rotateText {
+            0% {
+                transform: rotate(360deg);
             }
-        }
-    
-        .circle {
-            width: 160px;
-            height: 160px;
-            position: absolute;
-            top: 5px;
-            left: -5px;
-            position: relative;
-            border-radius: 100%;
-            padding: 16px;
-            animation: rotate-animation 8s infinite linear;
-            color: white;
-            font-size: 16px;
-        }
-    
-        .circle span {
-            position: absolute;
-            transform-origin: top left;
-        }
-    
-        @keyframes rotate-animation {
-            from {
-                transform: rotate(0);
-            }
-            to {
-                transform: rotate(-360deg);
+
+            100% {
+                transform: rotate(0deg);
             }
         }
     }
-    
 }
 
 .service-single {

@@ -1355,7 +1355,6 @@ nav .main-menu li a {
 
 /* theme */
 .hero-area {
-  padding: 150px 0;
   background: url("../images/hero-bg-shape.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -1527,46 +1526,24 @@ nav .main-menu li a {
 }
 .case-single .text-rotat {
   position: relative;
-}
-.case-single .text-rotat .text-rotat-icon {
-  border-radius: 50%;
-  height: 120px;
-  width: 120px;
-  background-color: transparent;
-  position: absolute;
-  top: 20px;
-  left: 10px;
-  border: 20px solid;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.case-single .text-rotat .text-rotat-icon span {
-  font-size: 55px;
-}
-.case-single .text-rotat .circle {
-  width: 160px;
-  height: 160px;
+.case-single .text-rotat img {
   position: absolute;
-  top: 5px;
-  left: -5px;
-  position: relative;
-  border-radius: 100%;
-  padding: 16px;
-  animation: rotate-animation 8s infinite linear;
-  color: white;
-  font-size: 16px;
+  animation: rotateText 10s linear infinite;
 }
-.case-single .text-rotat .circle span {
+.case-single .text-rotat span {
   position: absolute;
-  transform-origin: top left;
+  font-size: 50px;
 }
-@keyframes rotate-animation {
-  from {
-    transform: rotate(0);
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
   }
-  to {
-    transform: rotate(-360deg);
+  100% {
+    transform: rotate(0deg);
   }
 }
 
