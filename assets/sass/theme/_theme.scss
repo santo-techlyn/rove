@@ -206,7 +206,7 @@
 
         img {
             position: absolute;
-            animation: rotateText  10s linear infinite ;
+            animation: rotateText 10s linear infinite;
         }
 
         span {
@@ -503,6 +503,22 @@
 }
 
 .single-blog {
+    .blog-img {
+        overflow: hidden;
+
+        &:hover {
+            img {
+                transform: scale(1.04);
+                transition: $transition;
+            }
+        }
+
+        img {
+            transform: scale(1);
+            transition: $transition;
+        }
+    }
+
     .blog-contant {
         .blog-thumble {
             display: flex;
@@ -1567,6 +1583,7 @@
             padding: 30px;
             border: 1px solid $border-color;
             transition: $transition;
+
 
             &:hover {
                 padding: 0;

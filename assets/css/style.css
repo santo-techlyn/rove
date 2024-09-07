@@ -1786,6 +1786,17 @@ nav .main-menu li a {
   display: none;
 }
 
+.single-blog .blog-img {
+  overflow: hidden;
+}
+.single-blog .blog-img:hover img {
+  transform: scale(1.04);
+  transition: all 0.3s ease-in;
+}
+.single-blog .blog-img img {
+  transform: scale(1);
+  transition: all 0.3s ease-in;
+}
 .single-blog .blog-contant .blog-thumble {
   display: flex;
   justify-content: space-between;
