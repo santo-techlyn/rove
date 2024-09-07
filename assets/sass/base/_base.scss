@@ -29,6 +29,12 @@ h1 {
     @include desktop{
         font-size: 60px;
     }
+    @include tablet{
+        font-size: 78px;
+    }
+    @include landscape-phone{
+        font-size: 52px;
+    }
 }
 
 h2 {

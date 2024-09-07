@@ -57,6 +57,9 @@
                     padding-left: 10px;
                 }
             }
+            @include tablet {
+                width: 98%;
+            }
         }
 
 
@@ -91,6 +94,14 @@
                     color: $secondary-color;
                     transition: $transition;
                     -webkit-text-stroke: 0;
+                }
+
+                @include desktop{
+                    font-size: 120px;
+                }
+
+                @include tablet{
+                    font-size: 120px;
                 }
             }
         }
