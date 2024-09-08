@@ -14,6 +14,12 @@
             @include tablet{
                 gap: 20px;
             }
+            @include landscape-phone{
+                gap: 10px;
+            }
+            @include portrait-phone{
+                gap: 10px;
+            }
 
 
             label {
@@ -29,6 +35,13 @@
                 }
                 @include desktop{
                     width: 425px;
+                }
+                @include landscape-phone{
+                    width: 320px;
+                }
+                @include portrait-phone{
+                    width: 440px;
+                    font-size: 18px;
                 }
             }
 
@@ -55,6 +68,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include landscape-phone{
+                margin-top: 50px;
+            }
+            @include portrait-phone{
+                margin-top: 50px;
+                gap: 20px;
+            }
 
             label {
                 a {

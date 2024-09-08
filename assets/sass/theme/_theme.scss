@@ -27,9 +27,14 @@
                 top: 20px;
                 width: 45px;
             }
+
             @include landscape-phone {
                 top: 14px;
                 width: 40px;
+            }
+            @include portrait-phone {
+                top: 14px;
+                width: 25px;
             }
 
             &.hero-shape-2 {
@@ -50,8 +55,12 @@
                 @include tablet {
                     left: 5px;
                 }
+
                 @include landscape-phone {
                     left: 25px;
+                }
+                @include portrait-phone {
+                    left: 15px;
                 }
             }
 
@@ -74,7 +83,12 @@
                 @include tablet {
                     right: 0px;
                 }
+
                 @include landscape-phone {
+                    right: 17px;
+                    margin-top: 0;
+                }
+                @include portrait-phone {
                     right: 17px;
                     margin-top: 0;
                 }
@@ -140,7 +154,7 @@
                 margin-bottom: 50px;
             }
 
-            @include all-phone {
+            @include portrait-phone {
                 margin-bottom: 50px;
             }
         }
@@ -280,6 +294,10 @@
     transition: $transition;
 
     &.active {
+        @include portrait-phone {
+            padding: 60px 0 308px 0;
+        }
+
         .service-image {
             &::before {
                 opacity: 1;
@@ -294,6 +312,11 @@
                 @include landscape-phone {
                     height: 280px;
                     top: -130px;
+                }
+
+                @include portrait-phone {
+                    height: 280px;
+                    top: 140px;
                 }
 
                 @include desktop {
@@ -333,6 +356,11 @@
             left: 328px;
         }
 
+        @include portrait-phone {
+            width: 325px;
+            left: 0px;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -357,6 +385,11 @@
         }
 
         @include landscape-phone {
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
+        @include portrait-phone {
             margin-top: 20px;
             margin-left: 25px;
         }
@@ -387,6 +420,11 @@
         }
 
         @include landscape-phone {
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        @include portrait-phone {
             margin-left: 10px;
             margin-top: 20px;
         }
@@ -422,6 +460,14 @@
         grid-template-columns: auto auto auto auto auto;
         border-top: 1px solid $border-color;
         border-left: 1px solid $border-color;
+
+        @include landscape-phone {
+            grid-template-columns: auto auto;
+        }
+
+        @include portrait-phone {
+            grid-template-columns: auto auto;
+        }
     }
 }
 
@@ -470,6 +516,16 @@
             &::after {
                 display: none;
             }
+
+            @include landscape-phone {
+                top: 460px;
+            }
+
+            @include portrait-phone {
+                top: 355px;
+                right: 50px;
+                width: 50px;
+            }
         }
 
         .swiper-button-prev {
@@ -481,6 +537,16 @@
 
             &::after {
                 display: none;
+            }
+
+            @include landscape-phone {
+                top: 460px;
+            }
+
+            @include portrait-phone {
+                top: 355px;
+                left: 50px;
+                width: 50px;
             }
         }
     }
@@ -494,6 +560,14 @@
         padding: 0 100px;
     }
 
+    @include landscape-phone {
+        padding: 0;
+    }
+
+    @include portrait-phone {
+        padding: 0;
+    }
+
     .client-quote {
         font-size: 36px;
         color: $secondary-color;
@@ -504,6 +578,15 @@
         @include desktop {
             font-size: 30px;
         }
+
+        @include landscape-phone {
+            font-size: 30px;
+        }
+
+        @include portrait-phone {
+            font-size: 24px;
+        }
+
     }
 
     .client-part {
@@ -523,6 +606,14 @@
 
         @include tablet {
             margin-bottom: 100px;
+        }
+
+        @include landscape-phone {
+            margin-bottom: 90px;
+        }
+
+        @include portrait-phone {
+            margin-bottom: 90px;
         }
 
         .client-image {
@@ -564,6 +655,15 @@
             top: 90%;
         }
 
+        @include landscape-phone {
+            right: 40%;
+            top: 90%;
+        }
+        @include portrait-phone {
+            right: 35%;
+            top: 90%;
+        }
+
         &::after {
             display: none;
         }
@@ -585,6 +685,15 @@
             top: 90%;
         }
 
+        @include landscape-phone {
+            left: 40%;
+            top: 90%;
+        }
+        @include portrait-phone {
+            left: 35%;
+            top: 90%;
+        }
+
         img {
             transform: rotate(180deg);
         }
@@ -596,6 +705,9 @@
 }
 
 .single-blog {
+    @include portrait-phone{
+        margin-left: 20px;
+    }
     .blog-img {
         overflow: hidden;
 
@@ -635,6 +747,9 @@
             padding: 40px 0;
             border-bottom: 1px solid $border-color;
             color: $secondary-color;
+            @include portrait-phone{
+                gap: 80px;
+            }
 
             &:first-child {
                 font-size: 30px;
@@ -650,8 +765,12 @@
                 width: 200px;
                 margin-left: 100px;
 
-                @include landscape-phone{
+                @include landscape-phone {
                     margin-left: 50px;
+                }
+                @include portrait-phone {
+                    margin-left: 0px;
+                    width: 60px;
                 }
 
             }
@@ -673,7 +792,12 @@
         margin-top: 30px;
         margin-left: 0;
     }
+
     @include landscape-phone {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    @include portrait-phone {
         margin-top: 30px;
         margin-left: 0;
     }
@@ -730,10 +854,20 @@
             margin-left: 0;
             margin-top: 30px;
         }
+
+        @include landscape-phone {
+            margin-top: 30px;
+            margin-left: 0;
+        }
+        @include portrait-phone {
+            margin-top: 30px;
+            margin-left: 0;
+        }
     }
 }
 
 //home 22
+
 .section-top-2 {
     padding-bottom: 30px;
     border-bottom: 1px solid $border-color;
@@ -1147,7 +1281,7 @@
                 height: 330px;
             }
 
-            @include all-phone {
+            @include portrait-phone {
                 width: 430px;
                 height: 330px;
             }

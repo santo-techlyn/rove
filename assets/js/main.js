@@ -246,12 +246,18 @@
 
         // blog-slider
         var swiper = new Swiper(".blog-slider", {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 60,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            }
         });
 
         // blog-slider-2
@@ -263,12 +269,6 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-
-        //test
-       
-        
-          
-
 
         //copy email
         document.getElementById('copy-email').addEventListener('click', function () {

@@ -35,6 +35,9 @@ h1 {
     @include landscape-phone{
         font-size: 52px;
     }
+    @include portrait-phone{
+        font-size: 35px;
+    }
 }
 
 h2 {
