@@ -372,6 +372,10 @@ nav .main-menu li a {
 .footer-area .footer-address h5 {
   color: #000000;
 }
+.footer-area .footer-address h5 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
 .footer-area .form-input {
   position: relative;
 }
@@ -382,6 +386,11 @@ nav .main-menu li a {
   border: 0;
   border-bottom: 1px solid #B0B0B0;
   font-size: 18px;
+}
+@media (max-width: 575.98px) {
+  .footer-area .form-input input {
+    margin-top: 40px;
+  }
 }
 .footer-area .form-input input::-moz-placeholder {
   color: #6D6D6D;
@@ -415,6 +424,11 @@ nav .main-menu li a {
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .footer-area .form-input img {
     right: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer-area .form-input img {
+    top: 60px;
   }
 }
 .footer-area .marquee-area .text-marquee {
@@ -1591,6 +1605,16 @@ nav .main-menu li a {
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-area .about-content {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-area .about-content {
+    margin-top: 20px;
+  }
+}
 .about-area .about-content p:nth-child(2) {
   margin-bottom: 150px;
 }
@@ -1730,7 +1754,7 @@ nav .main-menu li a {
 }
 @media (max-width: 575.98px) {
   .service-single.active {
-    padding: 60px 0 308px 0;
+    padding: 60px 0 320px 0;
   }
 }
 .service-single.active .service-image::before {

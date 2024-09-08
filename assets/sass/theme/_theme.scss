@@ -139,6 +139,12 @@
 
 .about-area {
     .about-content {
+        @include tablet{
+            margin-top: 20px;
+        }
+        @include all-phone{
+            margin-top: 20px;
+        }
         p:nth-child(2) {
             margin-bottom: 150px;
 
@@ -295,7 +301,7 @@
 
     &.active {
         @include portrait-phone {
-            padding: 60px 0 308px 0;
+            padding: 60px 0 320px 0;
         }
 
         .service-image {
