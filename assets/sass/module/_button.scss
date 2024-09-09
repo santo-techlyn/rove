@@ -70,9 +70,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    background: linear-gradient(90deg, $primary-color 50%, $black-color 50%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    gap: 10px;
+    width: fit-content;
 
-    span {
-        font-size: 44px;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $primary-color;
+        transition: $transition-long;
+
+    }
+
+    &:hover {
+        &:after {
+            right: 0;
+            width: 100%;
+        }
+        .secondary-icon {
+            transform: rotate(45deg);
+            transition: $transition-long;
+        }
+    }
+
+    .secondary-icon {
+        width: 20px;
+        height: 20px;
+        transition: $transition-long;
     }
 }
 

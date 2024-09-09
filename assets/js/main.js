@@ -68,7 +68,7 @@
             spaceBetween: 0,
             centeredSlides: true,
             // direction: "vertical",
-            speed: 6000,
+            speed: 10000,
             autoplay: {
                 delay: 1,
             },
@@ -106,11 +106,7 @@
                     spaceBetween: 20
                 },
                 992: {
-                    slidesPerView: 3,
-                    spaceBetween: 20
-                },
-                2020: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 20
                 },
             },
@@ -135,7 +131,11 @@
                     spaceBetween: 20
                 },
                 992: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 3,
                     spaceBetween: 20
                 }
             }
@@ -310,7 +310,6 @@
     });
 
     $(window).on('scroll', function () {
-
         // navbar fixed
         const headerHeight = $(".header-area").outerHeight();
         if ($(this).scrollTop() > headerHeight) {
@@ -326,7 +325,6 @@
         // preloader
         var preLoder = $("#preloader");
         preLoder.fadeOut(0);
-
     });
 
 })(jQuery);

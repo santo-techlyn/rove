@@ -39,7 +39,8 @@
         h5 {
             color: $black-color;
         }
-        h5{
+
+        h5 {
             margin-top: 15px;
             margin-bottom: 20px;
         }
@@ -73,7 +74,7 @@
             @include tablet {
                 width: 98%;
             }
-            
+
         }
 
 
@@ -86,6 +87,7 @@
             @include screen-1200 {
                 right: 0;
             }
+
             @include portrait-phone {
                 top: 60px;
             }
@@ -101,9 +103,11 @@
             @include desktop {
                 padding: 40px 0;
             }
+
             @include landscape-phone {
                 padding: 40px 0;
             }
+
             @include portrait-phone {
                 padding: 20px 0;
             }
@@ -131,6 +135,7 @@
                 @include landscape-phone {
                     font-size: 100px;
                 }
+
                 @include portrait-phone {
                     font-size: 100px;
                 }
@@ -154,6 +159,7 @@
         @include landscape-phone {
             margin-top: 50px;
         }
+
         @include portrait-phone {
             margin-top: 60px;
         }
@@ -182,10 +188,30 @@
 
 //footer-02
 .footer-marquee-area {
+    @include tablet{
+        padding-bottom: 50px;
+    }
     .text-marquee {
+        overflow: hidden;
         padding: 110px 0;
+        border: 0;
         border-bottom: 1px solid $border-color;
         border-top: 1px solid $border-color;
+        @include tablet{
+            padding: 80px 0;
+        }
+        .swiper-slide{
+            @include tablet{
+                font-size: 100px;
+                padding: 0 20px; 
+                img{
+                    width: 100px;
+                    margin-right: 40px;
+                }
+            }
+
+           
+        }
     }
 }
 
@@ -193,6 +219,10 @@
     border-bottom: 1px solid $border-color;
 
     .footer-navigate {
+        @include tablet {
+            margin-top: 20px;
+        }
+
         ul {
             li {
                 margin-bottom: 20px;
@@ -200,7 +230,18 @@
         }
     }
 
+    .footer-address-2 {
+        @include tablet {
+            margin-top: 20px;
+        }
+
+    }
+
     .footer-input-2 {
+        @include tablet {
+            margin-top: 20px;
+        }
+
         .subscribe-input {
             position: relative;
 
