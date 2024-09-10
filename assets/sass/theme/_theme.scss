@@ -893,9 +893,13 @@
     h2 {
         text-transform: capitalize;
     }
-    .section-top-2-btn{
-        text-align: -webkit-right;
+
+    @include all-desktop {
+        .section-top-2-btn {
+            text-align: -webkit-right;
+        }
     }
+
 }
 
 .hero-home-2 {
@@ -1307,6 +1311,7 @@
     @include all-phone {
         padding: 25px 0;
     }
+
     @include screen-360 {
         padding: 25px 0;
     }
@@ -1404,6 +1409,7 @@
                 left: 18px;
                 top: -75px;
             }
+
             @include screen-360 {
                 width: 98%;
                 left: 15px;
@@ -1622,6 +1628,9 @@
 
 .single-testimonial-2 {
     position: relative;
+    @include screen-360{
+        padding-left: 30px;
+    }
 
     .testimonial-img {
         width: 50px;
