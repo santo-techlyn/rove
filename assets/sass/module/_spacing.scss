@@ -79,7 +79,10 @@
     padding-top: 140px;
 
     @include all-phone {
-        padding-top: 80px;
+        padding-top: 50px;
+    }
+    @include screen-360{
+        padding-top: 40px;
     }
 }
 
@@ -166,7 +169,10 @@
     padding-bottom: 140px;
 
     @include all-phone {
-        padding-bottom: 80px;
+        padding-bottom: 50px;
+    }
+    @include screen-360{
+        padding-bottom: 40px;
     }
 }
 
@@ -254,8 +260,12 @@
     padding-bottom: 140px;
 
     @include all-phone {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include screen-360{
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 

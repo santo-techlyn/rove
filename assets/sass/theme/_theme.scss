@@ -903,6 +903,7 @@
 }
 
 .hero-home-2 {
+
     @include all-phone {
         .home-2-top-marquee {
             padding: 0;
@@ -915,6 +916,27 @@
                 }
             }
         }
+    }
+    @include screen-360 {
+        .home-2-top-marquee {
+            padding: 0;
+
+            .scroll {
+                div {
+                    span {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include tablet{
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+    @include all-phone{
+        padding-top: 30px;
     }
 
     .hero-content {
@@ -1388,6 +1410,16 @@
         position: relative;
     }
 
+    .feature-wraper-2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 30px;
+        @include screen-360{
+            grid-template-columns: 100%;
+            gap: 10px;
+        }
+    }
+
     .feature-vertical-marquee {
         position: relative;
 
@@ -1402,12 +1434,33 @@
             top: 380px;
             right: -374px;
 
-            @include all-phone {
-                transform: rotate(0deg);
-                position: absolute;
-                width: 93%;
-                left: 18px;
-                top: -75px;
+            .swiper-slide {
+                @include tablet {
+                    font-size: 100px;
+                }
+            }
+
+            @include screen-1920 {
+                width: 940px;
+                top: 335px;
+                right: -345px;
+            }
+
+            @include screen-1400 {
+                width: 930px;
+                top: 330px;
+                right: -330px;
+            }
+            @include screen-1200 {
+                width: 930px;
+                top: 340px;
+                right: -330px;
+            }
+
+            @include desktop {
+                width: 984px;
+                top: 370px;
+                right: -364px;
             }
 
             @include screen-360 {
@@ -1419,17 +1472,15 @@
                 width: 900px;
             }
 
-            .swiper-slide {
-                @include tablet {
-                    font-size: 100px;
-                }
+            @include all-phone {
+                transform: rotate(0deg);
+                position: absolute;
+                width: 98%;
+                left: 18px;
+                top: -95px;
             }
 
-            @include desktop {
-                width: 1085px;
-                top: 415px;
-                right: -420px;
-            }
+
         }
     }
 }
@@ -1628,7 +1679,8 @@
 
 .single-testimonial-2 {
     position: relative;
-    @include screen-360{
+
+    @include screen-360 {
         padding-left: 30px;
     }
 
