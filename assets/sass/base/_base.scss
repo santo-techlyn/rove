@@ -51,6 +51,9 @@ h2 {
     @include all-phone {
         font-size: 36px;
     }
+    @include screen-360 {
+        font-size: 22px;
+    }
     @include tablet {
         font-size: 48px;
     }
@@ -89,6 +92,9 @@ h5 {
     text-transform: capitalize;
     @include all-phone {
         font-size: 20px;
+    }
+    @include screen-360 {
+        font-size: 18px;
     }
 }
 
