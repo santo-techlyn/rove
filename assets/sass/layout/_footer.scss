@@ -1,5 +1,14 @@
 /* footer */
 .footer-area {
+
+    .main-footer {
+        margin-top: 80px;
+
+        @include tablet {
+            margin-top: 30px;
+        }
+    }
+
     .career-badge {
         border-radius: 15px;
         border: 1px solid $badge-color;
@@ -12,9 +21,17 @@
 
     .footer-top-email {
         text-transform: lowercase;
+
+        @include tablet {
+            margin-top: 70px;
+        }
     }
 
     .footer-links {
+        @include tablet {
+            margin-top: 30px;
+        }
+
         @include landscape-phone {
             margin-bottom: 30px;
         }
@@ -35,63 +52,146 @@
         }
     }
 
-    .footer-address {
-        h5 {
-            color: $black-color;
+    .footer-right-wraper {
+        @include tablet {
+            margin-top: 40px;
         }
 
-        h5 {
-            margin-top: 15px;
-            margin-bottom: 20px;
-        }
-    }
-
-    .form-input {
-        position: relative;
-
-        input {
-            width: 100%;
-            padding: 20px;
-            margin-top: 70px;
-            border: 0;
-            border-bottom: 1px solid $border-color;
-            font-size: 18px;
-
-            @include portrait-phone {
-                margin-top: 40px;
-            }
-
-            &::placeholder {
-                color: $secondary-color;
-                padding-left: 70px;
-                font-size: 18px;
-
-                @include desktop {
-                    padding-left: 10px;
-                }
-            }
-
-            @include tablet {
-                width: 98%;
-            }
-
-        }
-
-
-        img {
-            width: 20px;
-            position: absolute;
-            top: 92px;
-            right: 15px;
+        .footer-address {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 55px;
 
             @include screen-1200 {
-                right: 0;
+                gap: 40px;
             }
 
-            @include portrait-phone {
-                top: 60px;
+            @include desktop {
+                gap: 0px;
+            }
+
+            @include all-phone {
+                gap: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 60%;
+            }
+
+            h5 {
+                color: $black-color;
             }
         }
+
+        .footer-subscribe {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+
+            @include screen-1200 {
+                gap: 25px;
+                justify-content: space-between;
+            }
+
+            @include desktop {
+                gap: 0px;
+                justify-content: space-between;
+            }
+
+           h5{
+            @include tablet{
+                margin-top: 40px;
+            }
+            @include all-phone{
+                margin-top: 40px;
+            }
+           }
+
+            @include all-phone {
+                gap: 0px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+
+            .form-input {
+                position: relative;
+
+                input {
+                    width: 110%;
+                    padding: 20px;
+                    margin-top: 70px;
+                    border: 0;
+                    border-bottom: 1px solid $border-color;
+                    font-size: 18px;
+
+                    @include screen-1200 {
+                        width: 90%;
+                    }
+
+                    @include desktop {
+                        width: 85%;
+                    }
+
+                    @include tablet {
+                        margin-top: 30px;
+                    }
+
+                    @include portrait-phone {
+                        margin-top: 40px;
+                    }
+                    @include all-phone {
+                        margin-top: 20px;
+                    }
+
+                    &::placeholder {
+                        color: $secondary-color;
+                        padding-left: 20px;
+                        font-size: 18px;
+
+                        @include desktop {
+                            padding-left: 10px;
+                        }
+                    }
+
+                    @include tablet {
+                        width: 98%;
+                    }
+
+                }
+
+
+                img {
+                    width: 20px;
+                    position: absolute;
+                    top: 92px;
+                    right: -25px;
+
+                    @include screen-1200 {
+                        right: 0;
+                    }
+
+                    @include desktop {
+                        top: 50px;
+                    }
+
+                    @include tablet {
+                        top: 50px;
+                        right: 0;
+                    }
+                    @include all-phone {
+                        top: 43px;
+                        right: 0;
+                    }
+
+                    @include portrait-phone {
+                        top: 60px;
+                    }
+                }
+
+            }
+        }
+
 
     }
 
@@ -285,6 +385,7 @@
                 @include tablet {
                     width: 40%;
                 }
+
                 @include all-phone {
                     width: 50%;
                 }
