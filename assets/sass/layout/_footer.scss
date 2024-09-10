@@ -77,6 +77,10 @@
                 align-items: flex-start;
                 width: 60%;
             }
+            @include screen-360 {
+                gap: 20px;
+                margin-top: 30px;
+            }
 
             h5 {
                 color: $black-color;
@@ -181,12 +185,9 @@
                     }
                     @include all-phone {
                         top: 43px;
-                        right: 0;
                     }
 
-                    @include portrait-phone {
-                        top: 60px;
-                    }
+                    
                 }
 
             }
