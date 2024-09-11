@@ -81,7 +81,12 @@
     @include all-phone {
         padding-top: 50px;
     }
-    @include screen-360{
+
+    @include tablet {
+        padding-bottom: 80px;
+    }
+
+    @include screen-360 {
         padding-top: 40px;
     }
 }
@@ -165,13 +170,19 @@
         padding-bottom: 80px;
     }
 }
+
 .pb-140 {
     padding-bottom: 140px;
 
     @include all-phone {
         padding-bottom: 50px;
     }
-    @include screen-360{
+
+    @include tablet {
+        padding-bottom: 80px;
+    }
+
+    @include screen-360 {
         padding-bottom: 40px;
     }
 }
@@ -239,6 +250,7 @@
 .py-115 {
     padding-top: 115px;
     padding-bottom: 115px;
+
     @include all-phone {
         padding-top: 75px;
         padding-bottom: 75px;
@@ -263,7 +275,13 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    @include screen-360{
+
+    @include tablet {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include screen-360 {
         padding-top: 40px;
         padding-bottom: 40px;
     }
@@ -288,6 +306,7 @@
 
 .mt-50 {
     margin-top: 50px;
+
     @include all-phone {
         margin-top: 30px;
     }
@@ -295,6 +314,7 @@
 
 .mt-60 {
     margin-top: 60px;
+
     @include all-phone {
         margin-top: 40px;
     }
@@ -306,6 +326,9 @@
 
 .mt-80 {
     margin-top: 80px;
+    @include screen-360{
+        margin-top: 40px;
+    }
 }
 
 .mt-90 {
@@ -346,6 +369,10 @@
 
 .mb-80 {
     margin-bottom: 80px;
+
+    @include all-phone {
+        margin-bottom: 40px;
+    }
 }
 
 .mb-90 {
