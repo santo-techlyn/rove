@@ -2725,7 +2725,7 @@
         position: relative;
         padding-bottom: 100px;
 
-        @include screen-360{
+        @include screen-360 {
             padding-bottom: 70px;
         }
 
@@ -2746,6 +2746,7 @@
             @include all-phone {
                 right: 37%;
             }
+
             @include screen-360 {
                 right: 35%;
             }
@@ -2772,6 +2773,7 @@
             @include all-phone {
                 left: 37%;
             }
+
             @include screen-360 {
                 left: 35%;
             }
