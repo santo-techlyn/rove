@@ -68,7 +68,7 @@
             spaceBetween: 0,
             centeredSlides: true,
             // direction: "vertical",
-            speed: 10000,
+            speed: 20000,
             autoplay: {
                 delay: 1,
             },
