@@ -433,6 +433,9 @@
             @include all-phone {
                 font-size: 64px;
             }
+            @include portrait-phone {
+                font-size: 45px;
+            }
 
             @include screen-360 {
                 font-size: 40px;

@@ -140,9 +140,34 @@
                 }
             }
         });
-
-        //vertical-marquee
-
+        //team-slider
+        var swiper = new Swiper(".expert-team-slider", {
+            slidesPerView: 1,
+            spaceBetween: 50,
+            freeMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
+            }
+        });
 
         //testimonial2
         var swiper = new Swiper(".testimonial2", {
@@ -212,6 +237,7 @@
                 }
             }
         });
+
         // reword single
         $('.rewards-single').hover(function () {
             $('.rewards-single').removeClass('active');
@@ -285,7 +311,7 @@
 
         // blog-slider-2
         var swiper = new Swiper(".blog-slider-2", {
-            slidesPerView: 1    ,
+            slidesPerView: 1,
             spaceBetween: 60,
             navigation: {
                 nextEl: ".swiper-button-next",
