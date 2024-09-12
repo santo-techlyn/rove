@@ -143,13 +143,16 @@
 .animated-image-area {
     .section-title {
         text-align: center;
+
         img {
             width: 100px;
             display: inline;
-            @include all-phone{
+
+            @include all-phone {
                 width: 70px;
             }
-            @include screen-360{
+
+            @include screen-360 {
                 width: 40px;
             }
 
@@ -1759,6 +1762,31 @@
     }
 }
 
+.talk-area-2 {
+    .talk-area-wraper {
+        position: relative;
+
+        .talk-bg-image,
+        .talk-bg-image-2 {
+            width: 150px;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .talk-bg-image {
+            bottom: 0;
+            right: 0;
+        }
+
+        .talk-bg-image-2 {
+            top: 0;
+            left: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+}
+
 .rewards-single {
     padding: 60px 0;
     background-color: transparent;
@@ -3163,5 +3191,78 @@
             background-color: $white-color;
             z-index: 9;
         }
+    }
+}
+
+//services
+
+.working-process-area {
+    overflow-x: hidden;
+
+    .swiper {
+        overflow: visible;
+        max-width: 1320px;
+    }
+
+    .container {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateX(-100%);
+            background-color: $white-color;
+            z-index: 9;
+        }
+    }
+
+    .working-process-btn {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: $primary-color;
+        top: 35%;
+        left: 44%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+        span {
+            color: $white-color;
+            font-size: 50px;
+        }
+    }
+
+}
+
+.single-working-process {
+    display: flex;
+    gap: 40px;
+
+    @include desktop {
+        gap: 10px;
+    }
+
+    h3 {
+        @include desktop {
+            font-size: 28px;
+        }
+    }
+
+    span {
+        font-size: 40px;
+        font-weight: 600;
+        color: $border-color;
+
+        @include desktop {
+            font-size: 22px;
+        }
+
     }
 }

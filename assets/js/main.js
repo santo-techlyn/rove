@@ -148,7 +148,7 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-              },
+            },
             breakpoints: {
                 576: {
                     slidesPerView: 2,
@@ -183,6 +183,26 @@
                     slidesPerView: 2,
                     spaceBetween: 20
                 }
+            }
+        });
+
+        // working slider
+        var swiper = new Swiper(".working-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 50,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
             }
         });
 
