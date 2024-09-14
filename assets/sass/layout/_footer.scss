@@ -255,6 +255,12 @@
     .footer-section-top-right {
         position: relative;
 
+        h2{
+            @include screen-360 {
+                font-size: 30px;
+            }
+        }
+
         @include landscape-phone {
             margin-top: 50px;
         }

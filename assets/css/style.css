@@ -625,6 +625,11 @@ nav .main-menu li a {
 .footer-area .footer-section-top-right {
   position: relative;
 }
+@media (max-width: 360px) {
+  .footer-area .footer-section-top-right h2 {
+    font-size: 30px;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .footer-area .footer-section-top-right {
     margin-top: 50px;
