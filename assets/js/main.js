@@ -94,7 +94,6 @@
 
         //vertical-marquee
 
-
         //case swiper
         var swiper = new Swiper(".case-swiper", {
             slidesPerView: 1,
