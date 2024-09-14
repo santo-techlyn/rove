@@ -2791,6 +2791,7 @@
             padding: 25px 0;
             backdrop-filter: blur(10px);
             background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(245, 244, 244, 0.2));
+            transition: $transition;
 
             a {
                 span {

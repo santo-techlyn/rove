@@ -4473,6 +4473,7 @@ nav .main-menu li a {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(245, 244, 244, 0.2));
+  transition: all 0.3s ease-in;
 }
 .single-team-3 .team-3-image .team-hover-icon a span {
   color: #6D6D6D;
