@@ -625,6 +625,11 @@ nav .main-menu li a {
 .footer-area .footer-section-top-right {
   position: relative;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-area .footer-section-top-right {
+    margin-top: 60px;
+  }
+}
 @media (max-width: 360px) {
   .footer-area .footer-section-top-right h2 {
     font-size: 30px;
@@ -847,59 +852,65 @@ nav .main-menu li a {
   padding: 35px;
   width: 50%;
 }
-.footer-area-3 .text-marquee {
-  border: 0;
+.footer-area-3 .footer-3-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.footer-area-3 .text-marquee .swiper-slide {
+.footer-area-3 .footer-3-social .single-social {
   font-size: 24px;
-  padding: 0 20px;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .footer-area-3 .text-marquee .swiper-slide {
+  .footer-area-3 .footer-3-social .single-social {
     padding: 0 5px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .footer-area-3 .text-marquee .swiper-slide {
+  .footer-area-3 .footer-3-social .single-social {
     font-size: 22px;
     padding: 0;
   }
 }
 @media (max-width: 767.98px) {
-  .footer-area-3 .text-marquee .swiper-slide {
+  .footer-area-3 .footer-3-social .single-social {
     font-size: 16px;
     padding: 0;
   }
 }
 @media (max-width: 360px) {
-  .footer-area-3 .text-marquee .swiper-slide {
+  .footer-area-3 .footer-3-social .single-social {
     font-size: 10px;
     padding: 0;
   }
 }
-.footer-area-3 .text-marquee .swiper-slide a {
+.footer-area-3 .footer-3-social .single-social a {
   color: #B0B0B0;
   text-decoration: underline;
+  transition: all 0.3s ease-in;
 }
-.footer-area-3 .text-marquee .swiper-slide a:hover {
+.footer-area-3 .footer-3-social .single-social a:hover {
   color: #141414;
+  transition: all 0.3s ease-in;
+}
+.footer-area-3 .footer-3-social .single-social svg {
+  width: 30px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .footer-area-3 .text-marquee .swiper-slide svg {
+  .footer-area-3 .footer-3-social .single-social svg {
     width: 35px;
   }
 }
 @media (max-width: 767.98px) {
-  .footer-area-3 .text-marquee .swiper-slide svg {
+  .footer-area-3 .footer-3-social .single-social svg {
     width: 30px;
   }
 }
 @media (max-width: 360px) {
-  .footer-area-3 .text-marquee .swiper-slide svg {
+  .footer-area-3 .footer-3-social .single-social svg {
     width: 25px;
   }
 }
-.footer-area-3 .text-marquee .swiper-slide svg path {
+.footer-area-3 .footer-3-social .single-social svg path {
   fill: #B0B0B0;
 }
 
@@ -1113,6 +1124,7 @@ nav .main-menu li a {
   padding: 10px 10px;
   border-radius: 30px;
   color: #000000;
+  transition: all 0.3s ease-in;
 }
 .case-3-btn:hover {
   color: #ffffff;
@@ -4772,12 +4784,14 @@ nav .main-menu li a {
   bottom: 0;
   width: auto;
   height: 230px;
+  z-index: -1;
 }
 .breadcrumb-area .breadcrumb-2 {
   position: absolute;
   right: 0;
   width: auto;
   height: 100%;
+  z-index: -1;
 }
 .breadcrumb-area .breadcrumb-text {
   display: flex;
@@ -4918,5 +4932,56 @@ nav .main-menu li a {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .single-working-process span {
     font-size: 22px;
+  }
+}
+
+.services-2-area .services-2-top {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  border-bottom: 1px solid #141414;
+  padding-bottom: 20px;
+}
+.services-2-area .services-2-top span {
+  color: #B0B0B0;
+}
+.services-2-area .services-2-area-mid ul li {
+  list-style: inside;
+  padding: 15px;
+  border-bottom: 1px solid;
+  padding-top: 0;
+  margin-top: 15px;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .services-2-area .services-2-area-mid ul li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767.98px) {
+  .services-2-area .services-2-area-mid {
+    margin: 40px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services-2-area .services-2-area-img {
+    margin-top: 40px;
+  }
+}
+.services-2-area .services-2-area-left .anchor-btn {
+  margin-top: 100px;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .services-2-area .services-2-area-left .anchor-btn {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services-2-area .services-2-area-left .anchor-btn {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .services-2-area .services-2-area-left .anchor-btn {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
