@@ -3359,48 +3359,18 @@ nav .main-menu li a {
   z-index: 9;
 }
 
-@media (max-width: 360px) {
-  .single-team {
-    transform: scale(0.8);
-  }
-}
 .single-team .team-img {
-  width: auto;
-  height: 550px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.single-team .team-img img {
+  transform: scale(1);
   transition: all 0.5s ease-in;
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .single-team .team-img {
-    height: 400px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .single-team .team-img {
-    height: 300px;
-  }
-}
-@media (max-width: 767.98px) {
-  .single-team .team-img {
-    height: 350px;
-  }
-}
-@media (max-width: 360px) {
-  .single-team .team-img {
-    height: 420px;
-    width: 390px;
-  }
-}
-.single-team .team-img:hover {
-  background-size: 500px;
+.single-team .team-img img:hover {
+  transform: scale(1.1);
   transition: all 0.5s ease-in;
-}
-@media (max-width: 767.98px) {
-  .single-team .team-img:hover {
-    background-size: 290px;
-  }
 }
 .single-team h4 {
   color-scheme: #000000;

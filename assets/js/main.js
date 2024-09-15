@@ -139,10 +139,11 @@
                 }
             }
         });
+        
         //team-slider
         var swiper = new Swiper(".expert-team-slider", {
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 10,
             freeMode: true,
             navigation: {
                 nextEl: ".swiper-button-next",

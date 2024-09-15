@@ -1636,44 +1636,22 @@
 }
 
 .single-team {
-    @include screen-360 {
-        transform: scale(.8);
-    }
-
     .team-img {
-        width: auto;
-        height: 550px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        transition: $transition-long;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
 
-
-        @include desktop {
-            height: 400px;
-        }
-
-        @include tablet {
-            height: 300px;
-        }
-
-        @include all-phone {
-            height: 350px;
-        }
-
-        @include screen-360 {
-            height: 420px;
-            width: 390px;
-        }
-
-        &:hover {
-            background-size: 500px;
+        img {
+            transform: scale(1);
             transition: $transition-long;
 
-            @include all-phone {
-                background-size: 290px;
+            &:hover {
+                transform: scale(1.1);
+                transition: $transition-long;
             }
         }
+
+
     }
 
     h4 {
@@ -3311,13 +3289,14 @@
                 }
             }
         }
-        @include all-phone{
+
+        @include all-phone {
             margin: 40px 0;
         }
     }
 
-    .services-2-area-img{
-        @include tablet{
+    .services-2-area-img {
+        @include tablet {
             margin-top: 40px;
         }
     }
@@ -3333,9 +3312,12 @@
             @include tablet {
                 margin-top: 30px;
             }
+
             @include all-phone {
                 margin-top: 30px;
             }
         }
     }
 }
+
+
