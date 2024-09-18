@@ -4954,4 +4954,88 @@ nav .main-menu li a {
   .services-2-area .services-2-area-left .anchor-btn {
     margin-top: 30px;
   }
+}
+
+.services-single-details .service-details-2nd-content ul {
+  margin-top: 40px;
+}
+.services-single-details .service-details-2nd-content ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 75%;
+  border-bottom: 1px solid #B0B0B0;
+  padding: 15px;
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .services-single-details .service-details-2nd-content ul li {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .services-single-details .service-details-2nd-content ul li {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .services-single-details .service-details-2nd-content ul li {
+    width: 100%;
+  }
+}
+.services-single-details .service-details-3nd-content img {
+  width: 60px;
+}
+.services-single-details .service-details-bottom-faq ul.accordion-list {
+  position: relative;
+  display: block;
+  height: auto;
+  margin: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+.services-single-details .service-details-bottom-faq ul.accordion-list li {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #B0B0B0;
+  padding: 30px 0;
+  cursor: pointer;
+}
+.services-single-details .service-details-bottom-faq ul.accordion-list li.active h3:after {
+  transform: rotate(45deg);
+}
+.services-single-details .service-details-bottom-faq ul.accordion-list li h3 {
+  font-weight: 600;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 0;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services-single-details .service-details-bottom-faq ul.accordion-list li div.answer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.services-single-details .service-details-bottom-faq ul.accordion-list li div.answer p {
+  position: relative;
+  display: block;
+  font-weight: 300;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+  line-height: 150%;
+  margin: 0 0 15px 0;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
