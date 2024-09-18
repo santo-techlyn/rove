@@ -3436,3 +3436,44 @@
         }
     }
 }
+
+.case-details-area {
+    .overview-top {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 20px;
+    }
+
+    .project-overview-content {
+        h5 {
+            border-bottom: 1px solid $border-color;
+            width: 22%;
+
+            @include desktop {
+                width: 30%;
+            }
+
+            @include tablet {
+                width: 19%;
+            }
+        }
+
+        .objectives {
+            display: flex;
+            justify-content: space-between;
+
+            @include portrait-phone {
+                flex-direction: column;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 15px;
+
+                    @include desktop {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

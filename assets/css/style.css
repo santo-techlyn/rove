@@ -5051,4 +5051,40 @@ nav .main-menu li a {
   .case-area-style-2 .case-single .case-main-img {
     height: auto;
   }
+}
+
+.case-details-area .overview-top {
+  border-bottom: 1px solid #B0B0B0;
+  padding-bottom: 20px;
+}
+.case-details-area .project-overview-content h5 {
+  border-bottom: 1px solid #B0B0B0;
+  width: 22%;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .case-details-area .project-overview-content h5 {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .case-details-area .project-overview-content h5 {
+    width: 19%;
+  }
+}
+.case-details-area .project-overview-content .objectives {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 575.98px) {
+  .case-details-area .project-overview-content .objectives {
+    flex-direction: column;
+  }
+}
+.case-details-area .project-overview-content .objectives ul li {
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .case-details-area .project-overview-content .objectives ul li {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */
