@@ -5038,4 +5038,17 @@ nav .main-menu li a {
   line-height: 150%;
   margin: 0 0 15px 0;
   font-size: 14px;
+}
+
+.case-area-style-2 .case-single {
+  padding: 30px;
+  border: 1px solid #B0B0B0;
+}
+.case-area-style-2 .case-single .case-main-img {
+  height: 486px;
+}
+@media (max-width: 991.98px) {
+  .case-area-style-2 .case-single .case-main-img {
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

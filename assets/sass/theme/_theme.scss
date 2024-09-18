@@ -3420,3 +3420,19 @@
         }
     }
 }
+
+// case pages
+.case-area-style-2 {
+    .case-single {
+        padding: 30px;
+        border: 1px solid $border-color;
+
+        .case-main-img {
+            height: 486px;
+
+            @include all-phone-tablet {
+                height: auto;
+            }
+        }
+    }
+}
