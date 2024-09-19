@@ -934,6 +934,12 @@
         }
     }
 
+    .secondary-btn {
+        @include portrait-phone {
+            margin-top: 15px;
+        }
+    }
+
 }
 
 .hero-home-2 {
@@ -3472,6 +3478,172 @@
                     @include desktop {
                         font-size: 14px;
                     }
+                }
+            }
+        }
+    }
+
+    .swiper {
+        position: relative;
+        height: 550px;
+
+        @include screen-1200 {
+            height: 600px;
+        }
+
+        @include desktop {
+            height: 600px;
+        }
+
+        @include portrait-phone {
+            height: 550px;
+        }
+
+        .hr {
+            width: 100%;
+            height: 2px;
+            background-color: $border-color;
+            margin-top: 50px;
+        }
+
+        .swiper-slide {
+            position: relative;
+        }
+
+        .swiper-wrapper {
+            .swiper-slide-active {
+                .single-case-details {
+                    margin-top: 100px;
+                    transition: $transition-long;
+                }
+            }
+        }
+    }
+
+
+}
+
+.single-case-details {
+    .step {
+        border: 1px solid $border-color;
+        padding: 5px 10px;
+        border-radius: 30px;
+        background-color: $white-color;
+        color: $primary-color;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    .hr-2 {
+        width: 1px;
+        height: 200px;
+        background-color: $black-color;
+        position: absolute;
+        top: 33px;
+        right: 50%;
+    }
+
+    .single-case-details-content {
+        transition: $transition-long;
+        margin-top: 50px;
+        border: 1px solid;
+        padding: 70px 55px;
+        top: 80px;
+        background-color: $white-color;
+
+    }
+}
+
+.case-details-img-slider {
+
+    .share {
+        display: flex;
+        a{
+            padding: 10px;
+            border: 1px solid $border-color;
+        }
+    }
+
+    .overview-top {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 20px;
+    }
+
+    .case-img-swiper-2 {
+        @include all-phone-tablet {
+            margin-top: 20px;
+        }
+    }
+
+    .case-img-swiper {
+        margin-top: 20px;
+
+        .swiper-slide-thumb-active {
+            padding: 5px;
+            border: 1px solid $border-color;
+            transition: $transition;
+        }
+    }
+
+    .img-slider-pagination {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid $border-color;
+        padding: 20px 0;
+
+        @include all-phone {
+            flex-direction: column;
+        }
+
+
+
+        .hr-3 {
+            width: 1px;
+            height: 50px;
+            background-color: $border-color;
+
+            @include all-phone {
+                height: 1px;
+                width: 50px;
+                margin: 20px 0;
+            }
+        }
+
+        .pagination-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                img {
+                    width: 20px;
+                    transform: rotate(225deg);
+                }
+            }
+
+            .pagination-img {
+                width: 100px;
+                height: auto;
+            }
+
+            .pagination-name {
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        .pagination-right {
+            @extend .pagination-left;
+
+            a {
+                img {
+                    width: 20px;
+                    transform: rotate(45deg);
                 }
             }
         }

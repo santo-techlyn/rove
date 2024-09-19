@@ -139,7 +139,7 @@
                 }
             }
         });
-        
+
         //team-slider
         var swiper = new Swiper(".expert-team-slider", {
             slidesPerView: 1,
@@ -242,22 +242,61 @@
             }
         });
 
+        //case-details swiper
+        var swiper = new Swiper(".case-details", {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 30,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                }
+            }
+        });
+
+        //case-img-swiper
+        var swiper = new Swiper(".case-img-swiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".case-img-swiper-2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+
         // /service-details-bottom-faq
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('.accordion-list > li > .answer').hide();
-              
-            $('.accordion-list > li').click(function() {
-              if ($(this).hasClass("active")) {
-                $(this).removeClass("active").find(".answer").slideUp();
-              } else {
-                $(".accordion-list > li.active .answer").slideUp();
-                $(".accordion-list > li.active").removeClass("active");
-                $(this).addClass("active").find(".answer").slideDown();
-              }
-              return false;
+
+            $('.accordion-list > li').click(function () {
+                if ($(this).hasClass("active")) {
+                    $(this).removeClass("active").find(".answer").slideUp();
+                } else {
+                    $(".accordion-list > li.active .answer").slideUp();
+                    $(".accordion-list > li.active").removeClass("active");
+                    $(this).addClass("active").find(".answer").slideDown();
+                }
+                return false;
             });
-            
-          });
+
+        });
 
         //blog3
         var swiper = new Swiper(".blog3", {
