@@ -5222,4 +5222,30 @@ nav .main-menu li a {
 .case-details-img-slider .img-slider-pagination .pagination-right a img {
   width: 20px;
   transform: rotate(45deg);
+}
+
+.blog-page-area .single-blog {
+  margin-top: 50px;
+}
+@media (max-width: 767.98px) {
+  .blog-page-area .single-blog {
+    margin-top: 30px;
+  }
+}
+.blog-page-area .blog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blog-page-area .blog-pagination a img {
+  width: 20px;
+  transform: rotate(225deg);
+}
+.blog-page-area .blog-pagination .next-btn {
+  transform: rotate(45deg);
+}
+.blog-page-area .blog-pagination .pagination-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

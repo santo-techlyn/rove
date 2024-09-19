@@ -3534,7 +3534,8 @@
 
     .share {
         display: flex;
-        a{
+
+        a {
             padding: 10px;
             border: 1px solid $border-color;
         }
@@ -3619,6 +3620,40 @@
                     transform: rotate(45deg);
                 }
             }
+        }
+    }
+}
+
+//blog-pages
+.blog-page-area {
+    .single-blog {
+        margin-top: 50px;
+
+        @include all-phone {
+            margin-top: 30px;
+        }
+    }
+
+    .blog-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a {
+            img {
+                width: 20px;
+                transform: rotate(225deg);
+            }
+        }
+
+        .next-btn {
+            transform: rotate(45deg);
+        }
+
+        .pagination-number {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
     }
 }
