@@ -915,6 +915,31 @@ nav .main-menu li a {
 }
 
 /* breadcrumb */
+.breadcrumb-area {
+  position: relative;
+}
+.breadcrumb-area .breadcrumb-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: 230px;
+  z-index: -1;
+}
+.breadcrumb-area .breadcrumb-2 {
+  position: absolute;
+  right: 0;
+  width: auto;
+  height: 100%;
+  z-index: -1;
+}
+.breadcrumb-area .breadcrumb-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 360px;
+}
+
 /* tab & accordion */
 /* animation */
 .item-rotate {
@@ -4748,31 +4773,6 @@ nav .main-menu li a {
   .home-2-marquee .text-marquee .swiper-slide svg {
     width: 20px;
   }
-}
-
-.breadcrumb-area {
-  position: relative;
-}
-.breadcrumb-area .breadcrumb-1 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: auto;
-  height: 230px;
-  z-index: -1;
-}
-.breadcrumb-area .breadcrumb-2 {
-  position: absolute;
-  right: 0;
-  width: auto;
-  height: 100%;
-  z-index: -1;
-}
-.breadcrumb-area .breadcrumb-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 360px;
 }
 
 .our-mission-area .mission-content .mission-text .title {

@@ -3086,33 +3086,6 @@
 
 //about
 
-.breadcrumb-area {
-    position: relative;
-
-    .breadcrumb-1 {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: auto;
-        height: 230px;
-        z-index: -1;
-    }
-
-    .breadcrumb-2 {
-        position: absolute;
-        right: 0;
-        width: auto;
-        height: 100%;
-        z-index: -1;
-    }
-
-    .breadcrumb-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 360px;
-    }
-}
 
 .our-mission-area {
     .mission-content {
