@@ -3847,3 +3847,37 @@
         }
     }
 }
+
+.blog-page-3-area {
+    @extend .blog-page-2-area;
+
+    .blog-hr {
+        left: -70px;
+
+        @include desktop {
+            left: -20px;
+        }
+
+        @include screen-1200 {
+            left: -25px;
+        }
+
+        @include all-phone-tablet {
+            display: none;
+        }
+    }
+
+    .blog-sidebar-wraper {
+        display: flex;
+        justify-content: end;
+        @include all-phone-tablet{
+            justify-content: start;
+            margin-top: 50px;
+        }
+    }
+    .blog-single-container{
+        @include all-phone-tablet{
+            margin-top: 0;
+        }
+    }
+}
