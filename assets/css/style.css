@@ -5257,7 +5257,8 @@ nav .main-menu li a {
 
 .blog-sidebar {
   max-width: 80%;
-  position: relative;
+  position: sticky;
+  top: 90px;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .blog-sidebar {
@@ -5276,7 +5277,7 @@ nav .main-menu li a {
 }
 .blog-sidebar .blog-hr {
   width: 1px;
-  height: 3000px;
+  height: 1550px;
   background-color: #B0B0B0;
   position: absolute;
   right: -70px;
@@ -5284,19 +5285,19 @@ nav .main-menu li a {
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .blog-sidebar .blog-hr {
-    height: 2648px;
+    height: 1590px;
     right: -20px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .blog-sidebar .blog-hr {
-    height: 2820px;
+    height: 1550px;
     right: -25px;
   }
 }
 @media (min-width: 1400px) and (max-width: 1919.98px) {
   .blog-sidebar .blog-hr {
-    height: 2990px;
+    height: 1550px;
   }
 }
 @media (max-width: 991.98px) {
@@ -5376,75 +5377,77 @@ nav .main-menu li a {
   color: #6D6D6D;
 }
 
-.blog-page-2-area, .blog-page-3-area {
+.blog-page-2-area, .blog-page-3-area, .blog-single-area-1 {
   position: relative;
 }
 @media (max-width: 360px) {
-  .blog-page-2-area .blog-pagination, .blog-page-3-area .blog-pagination {
+  .blog-page-2-area .blog-pagination, .blog-page-3-area .blog-pagination, .blog-single-area-1 .blog-pagination {
     margin-bottom: 50px;
   }
 }
-.blog-page-2-area .blog-hr-2, .blog-page-3-area .blog-hr-2 {
+.blog-page-2-area .blog-hr-2, .blog-page-3-area .blog-hr-2, .blog-single-area-1 .blog-hr-2 {
   height: 1px;
   width: 100%;
   background-color: #B0B0B0;
   position: absolute;
   bottom: 53px;
 }
-.blog-page-2-area .single-blog, .blog-page-3-area .single-blog {
+.blog-page-2-area .single-blog, .blog-page-3-area .single-blog, .blog-single-area-1 .single-blog {
   margin-bottom: 80px;
 }
-.blog-page-2-area .single-blog .blog-contant .blog-title h4, .blog-page-3-area .single-blog .blog-contant .blog-title h4 {
+.blog-page-2-area .single-blog .blog-contant .blog-title h4, .blog-page-3-area .single-blog .blog-contant .blog-title h4, .blog-single-area-1 .single-blog .blog-contant .blog-title h4 {
   color: #6D6D6D;
   transition: all 0.3s ease-in;
 }
-.blog-page-2-area .single-blog .blog-contant .blog-title h4:hover, .blog-page-3-area .single-blog .blog-contant .blog-title h4:hover {
+.blog-page-2-area .single-blog .blog-contant .blog-title h4:hover, .blog-page-3-area .single-blog .blog-contant .blog-title h4:hover, .blog-single-area-1 .single-blog .blog-contant .blog-title h4:hover {
   color: #141414;
   transition: all 0.3s ease-in;
 }
-.blog-page-2-area .single-blog .anchor-btn h5, .blog-page-3-area .single-blog .anchor-btn h5 {
+.blog-page-2-area .single-blog .anchor-btn h5, .blog-page-3-area .single-blog .anchor-btn h5, .blog-single-area-1 .single-blog .anchor-btn h5 {
   font-weight: 400;
 }
-.blog-page-2-area .single-blog .anchor-btn img, .blog-page-3-area .single-blog .anchor-btn img {
+.blog-page-2-area .single-blog .anchor-btn img, .blog-page-3-area .single-blog .anchor-btn img, .blog-single-area-1 .single-blog .anchor-btn img {
   width: 22px;
   height: 22px;
 }
 @media (max-width: 991.98px) {
-  .blog-page-2-area .blog-single-container, .blog-page-3-area .blog-single-container {
+  .blog-page-2-area .blog-single-container, .blog-page-3-area .blog-single-container, .blog-single-area-1 .blog-single-container {
     margin-top: 50px;
   }
 }
 
-.blog-page-3-area .blog-hr {
+.blog-page-3-area .blog-hr, .blog-single-area-1 .blog-hr {
   left: -70px;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .blog-page-3-area .blog-hr {
+  .blog-page-3-area .blog-hr, .blog-single-area-1 .blog-hr {
     left: -20px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  .blog-page-3-area .blog-hr {
+  .blog-page-3-area .blog-hr, .blog-single-area-1 .blog-hr {
     left: -25px;
   }
 }
 @media (max-width: 991.98px) {
-  .blog-page-3-area .blog-hr {
+  .blog-page-3-area .blog-hr, .blog-single-area-1 .blog-hr {
     display: none;
   }
 }
-.blog-page-3-area .blog-sidebar-wraper {
+.blog-page-3-area .blog-sidebar-wraper, .blog-single-area-1 .blog-sidebar-wraper {
   display: flex;
   justify-content: end;
+  position: sticky;
+  top: 90px;
 }
 @media (max-width: 991.98px) {
-  .blog-page-3-area .blog-sidebar-wraper {
+  .blog-page-3-area .blog-sidebar-wraper, .blog-single-area-1 .blog-sidebar-wraper {
     justify-content: start;
     margin-top: 50px;
   }
 }
 @media (max-width: 991.98px) {
-  .blog-page-3-area .blog-single-container {
+  .blog-page-3-area .blog-single-container, .blog-single-area-1 .blog-single-container {
     margin-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */

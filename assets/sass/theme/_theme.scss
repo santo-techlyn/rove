@@ -3665,7 +3665,8 @@
 
 .blog-sidebar {
     max-width: 80%;
-    position: relative;
+    position: sticky;
+    top: 90px;
 
     @include desktop {
         max-width: 95%;
@@ -3681,24 +3682,24 @@
 
     .blog-hr {
         width: 1px;
-        height: 3000px;
+        height: 1550px;
         background-color: $border-color;
         position: absolute;
         right: -70px;
         top: -150px;
 
         @include desktop {
-            height: 2648px;
+            height: 1590px;
             right: -20px;
         }
 
         @include screen-1200 {
-            height: 2820px;
+            height: 1550px;
             right: -25px;
         }
 
         @include screen-1400 {
-            height: 2990px;
+            height: 1550px;
         }
 
         @include all-phone-tablet {
@@ -3870,14 +3871,22 @@
     .blog-sidebar-wraper {
         display: flex;
         justify-content: end;
-        @include all-phone-tablet{
+        position: sticky;
+        top: 90px;
+
+        @include all-phone-tablet {
             justify-content: start;
             margin-top: 50px;
         }
     }
-    .blog-single-container{
-        @include all-phone-tablet{
+
+    .blog-single-container {
+        @include all-phone-tablet {
             margin-top: 0;
         }
     }
+}
+
+.blog-single-area-1{
+    @extend .blog-page-3-area;  
 }
