@@ -3530,16 +3530,16 @@
     }
 }
 
-.case-details-img-slider {
+.share {
+    display: flex;
 
-    .share {
-        display: flex;
-
-        a {
-            padding: 10px;
-            border: 1px solid $border-color;
-        }
+    a {
+        padding: 10px;
+        border: 1px solid $border-color;
     }
+}
+
+.case-details-img-slider {
 
     .overview-top {
         border-bottom: 1px solid $border-color;
@@ -3555,8 +3555,12 @@
     .case-img-swiper {
         margin-top: 20px;
 
-        .swiper-slide-thumb-active {
+        .swiper-slide {
             padding: 5px;
+            border: 1px solid transparent;
+        }
+
+        .swiper-slide-thumb-active {
             border: 1px solid $border-color;
             transition: $transition;
         }
@@ -3634,28 +3638,212 @@
             margin-top: 30px;
         }
     }
+}
 
-    .blog-pagination {
+.blog-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+        img {
+            width: 20px;
+            transform: rotate(225deg);
+        }
+    }
+
+    .next-btn {
+        transform: rotate(45deg);
+    }
+
+    .pagination-number {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        gap: 10px;
+    }
+}
 
-        a {
-            img {
-                width: 20px;
-                transform: rotate(225deg);
+.blog-sidebar {
+    max-width: 80%;
+    position: relative;
+
+    @include desktop {
+        max-width: 95%;
+    }
+
+    @include screen-1200 {
+        max-width: 90%;
+    }
+
+    @include screen-360 {
+        max-width: 100%;
+    }
+
+    .blog-hr {
+        width: 1px;
+        height: 3000px;
+        background-color: $border-color;
+        position: absolute;
+        right: -70px;
+        top: -150px;
+
+        @include desktop {
+            height: 2648px;
+            right: -20px;
+        }
+
+        @include screen-1200 {
+            height: 2820px;
+            right: -25px;
+        }
+
+        @include screen-1400 {
+            height: 2990px;
+        }
+
+        @include all-phone-tablet {
+            display: none;
+        }
+    }
+
+    .categories {
+        span {
+            display: block;
+            margin-bottom: 20px;
+
+            a {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .search {
+        margin-top: 60px;
+
+        .blog-sidebar-search {
+            position: relative;
+        }
+
+        input {
+            padding: 15px;
+            border: 0;
+            border-bottom: 1px solid $primary-color;
+            font-size: 20px;
+
+            @include all-phone-tablet {
+                width: 90%;
+            }
+
+            &::placeholder {
+                font-size: 20px;
             }
         }
 
-        .next-btn {
-            transform: rotate(45deg);
+        span {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-40%);
+            font-size: 24px;
+        }
+    }
+
+    .recent-posts {
+        margin-top: 60px;
+    }
+
+    .tags {
+        margin-top: 60px;
+
+        span {
+            font-size: 20px;
+            color: $primary-color;
         }
 
-        .pagination-number {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .line {
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            background-color: $border-color;
+            margin: 0px 7px;
+        }
+    }
+
+    .follow-us {
+        margin-top: 60px;
+    }
+}
+
+.single-post {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+
+    .post-img {
+        img {
+            width: 120px;
+            height: 112px;
+        }
+    }
+
+    .post-content {
+        span {
+            color: $secondary-color;
         }
     }
 }
 
+.blog-page-2-area {
+    position: relative;
+
+    .blog-pagination {
+        @include screen-360 {
+            margin-bottom: 50px;
+        }
+    }
+
+    .blog-hr-2 {
+        height: 1px;
+        width: 100%;
+        background-color: $border-color;
+        position: absolute;
+        bottom: 53px;
+    }
+
+    .single-blog {
+        margin-bottom: 80px;
+
+        .blog-contant {
+            .blog-title {
+                h4 {
+                    color: $secondary-color;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $primary-color;
+                        transition: $transition;
+                    }
+                }
+
+            }
+        }
+
+        .anchor-btn {
+            h5 {
+                font-weight: 400;
+            }
+
+            img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+
+    .blog-single-container {
+        @include all-phone-tablet {
+            margin-top: 50px;
+        }
+    }
+}
