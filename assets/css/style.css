@@ -565,6 +565,10 @@ nav .main-menu li a {
     top: 43px;
   }
 }
+.footer-area .marquee-area {
+  width: 100%;
+  overflow-x: hidden;
+}
 .footer-area .marquee-area .text-marquee {
   border: 0;
   padding: 80px 0;
@@ -4275,7 +4279,7 @@ nav .main-menu li a {
 }
 @media (max-width: 575.98px) {
   .single-case-3 .case-3-content .case-3-btn-group {
-    gap: 10px;
+    gap: 5px;
   }
 }
 @media (max-width: 360px) {
@@ -4301,7 +4305,7 @@ nav .main-menu li a {
 @media (max-width: 575.98px) {
   .single-case-3 .case-3-content .case-3-btn-group .case-3-btn {
     padding: 5px 5px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (max-width: 360px) {
@@ -5304,6 +5308,11 @@ nav .main-menu li a {
     margin-top: 30px;
   }
 }
+@media (max-width: 575.98px) {
+  .blog-page-area .single-blog {
+    margin-left: 0;
+  }
+}
 
 .blog-pagination {
   display: flex;
@@ -5410,6 +5419,11 @@ nav .main-menu li a {
   transform: translateY(-40%);
   font-size: 24px;
 }
+@media (max-width: 575.98px) {
+  .blog-sidebar .search span {
+    right: 10px;
+  }
+}
 .blog-sidebar .recent-posts {
   margin-top: 60px;
 }
@@ -5448,6 +5462,11 @@ nav .main-menu li a {
 .blog-page-2-area, .blog-page-3-area, .blog-details-area-1 {
   position: relative;
 }
+@media (max-width: 575.98px) {
+  .blog-page-2-area .blog-pagination, .blog-page-3-area .blog-pagination, .blog-details-area-1 .blog-pagination {
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 360px) {
   .blog-page-2-area .blog-pagination, .blog-page-3-area .blog-pagination, .blog-details-area-1 .blog-pagination {
     margin-bottom: 50px;
@@ -5462,6 +5481,11 @@ nav .main-menu li a {
 }
 .blog-page-2-area .single-blog, .blog-page-3-area .single-blog, .blog-details-area-1 .single-blog {
   margin-bottom: 80px;
+}
+@media (max-width: 575.98px) {
+  .blog-page-2-area .single-blog, .blog-page-3-area .single-blog, .blog-details-area-1 .single-blog {
+    margin-left: 0;
+  }
 }
 .blog-page-2-area .single-blog .blog-contant .blog-title h4, .blog-page-3-area .single-blog .blog-contant .blog-title h4, .blog-details-area-1 .single-blog .blog-contant .blog-title h4 {
   color: #6D6D6D;
@@ -5624,4 +5648,25 @@ nav .main-menu li a {
   align-items: center;
   gap: 10px;
   margin-top: 60px;
+}
+
+.error-area .error-content {
+  text-align: center;
+}
+.error-area .error-content .error-text {
+  font-size: 250px;
+  font-weight: 500;
+}
+@media (max-width: 575.98px) {
+  .error-area .error-content .error-text {
+    font-size: 150px;
+  }
+}
+@media (max-width: 360px) {
+  .error-area .error-content .error-text {
+    font-size: 90px;
+  }
+}
+.error-area .error-content .primary-btn {
+  margin-top: 120px;
 }/*# sourceMappingURL=style.css.map */

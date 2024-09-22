@@ -195,6 +195,8 @@
     }
 
     .marquee-area {
+        width: 100%;
+        overflow-x: hidden;
         .text-marquee {
             border: 0;
             padding: 80px 0;

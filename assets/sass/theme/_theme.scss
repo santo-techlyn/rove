@@ -2495,7 +2495,7 @@
             }
 
             @include portrait-phone {
-                gap: 10px;
+                gap: 5px;
             }
 
             @include screen-360 {
@@ -2519,7 +2519,7 @@
 
                 @include portrait-phone {
                     padding: 5px 5px;
-                    font-size: 14px;
+                    font-size: 13px;
                 }
 
                 @include screen-360 {
@@ -3639,6 +3639,9 @@
         @include all-phone {
             margin-top: 30px;
         }
+        @include portrait-phone {
+            margin-left: 0;
+        }
     }
 }
 
@@ -3748,6 +3751,9 @@
             top: 50%;
             transform: translateY(-40%);
             font-size: 24px;
+            @include portrait-phone{
+                right: 10px;
+            }
         }
     }
 
@@ -3801,6 +3807,9 @@
     position: relative;
 
     .blog-pagination {
+        @include portrait-phone{
+            margin-bottom: 50px;
+        }
         @include screen-360 {
             margin-bottom: 50px;
         }
@@ -3816,6 +3825,10 @@
 
     .single-blog {
         margin-bottom: 80px;
+
+        @include portrait-phone{
+            margin-left: 0;
+        }
 
         .blog-contant {
             .blog-title {
@@ -4014,6 +4027,25 @@
             align-items: center;
             gap: 10px;
             margin-top: 60px;
+        }
+    }
+}
+
+.error-area{
+    .error-content{
+        text-align: center;
+        .error-text{
+            font-size: 250px;
+            font-weight: 500;
+            @include portrait-phone{
+                font-size: 150px;
+            }
+            @include screen-360{
+                font-size: 90px;
+            }
+        }
+        .primary-btn{
+            margin-top: 120px;
         }
     }
 }
