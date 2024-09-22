@@ -143,3 +143,34 @@
         }
     }
 }
+.contact-right-form{
+    form{
+        input{
+            display: block;
+            padding: 20px;
+            border: 0;
+            border-bottom: 1px solid $border-color;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        textarea{
+            display: block;
+            padding: 20px;
+            padding-bottom: 50px;
+            border: 0;
+            border-bottom: 1px solid $border-color;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .radio{
+            margin-top: 10px;
+            #checkbox{
+                display: inline;
+                width: auto;
+            }
+        }
+        .primary-btn{
+            margin-top: 50px;
+        }
+    }
+}
