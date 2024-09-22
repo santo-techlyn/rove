@@ -5585,4 +5585,10 @@ nav .main-menu li a {
   background-color: #B0B0B0;
   position: absolute;
   bottom: 53px;
+}
+
+.contact-page-form .contact-content .media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

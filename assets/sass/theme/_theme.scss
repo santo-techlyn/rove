@@ -3999,3 +3999,13 @@
         bottom: 53px;
     }
 }
+
+.contact-page-form{
+    .contact-content{
+        .media{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
