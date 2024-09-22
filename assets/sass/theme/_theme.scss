@@ -3118,6 +3118,9 @@
             @include landscape-phone {
                 left: 15%;
             }
+            @include portrait-phone {
+                left: 20%;
+            }
 
             &::after {
                 display: none;
@@ -3331,9 +3334,7 @@
         img {
             width: 60px;
         }
-    }
-
-    
+    } 
 }
 
 .faq {
