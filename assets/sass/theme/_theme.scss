@@ -3878,6 +3878,12 @@
             justify-content: start;
             margin-top: 50px;
         }
+
+        .share {
+            @include all-phone {
+                margin-bottom: 40px;
+            }
+        }
     }
 
     .blog-single-container {
@@ -3887,6 +3893,109 @@
     }
 }
 
-.blog-single-area-1{
-    @extend .blog-page-3-area;  
+.blog-details-area-1 {
+    @extend .blog-page-3-area;
+}
+
+.blog-details-container {
+    @include all-phone-tablet {
+        margin-top: 30px;
+    }
+
+    .single-blog {
+        margin-bottom: 40px;
+
+        @include portrait-phone {
+            margin-left: 0;
+        }
+    }
+
+    .blog-details-shape {
+        display: flex;
+        gap: 40px;
+
+        @include screen-360 {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        img {
+            width: 72px;
+            height: 52px;
+        }
+
+    }
+
+    .left-img-blog-left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include portrait-phone {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .media {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            @include screen-360 {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 20px;
+                gap: 10px;
+
+            }
+        }
+    }
+
+    .related-blog {
+        margin-top: 60px;
+    }
+
+}
+
+.single-comment {
+    display: flex;
+    gap: 40px;
+
+    @include portrait-phone {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .comment-img {
+        img {
+            width: 180px;
+            height: 180px;
+        }
+    }
+
+    .comment-content {
+        h5 {
+            @include portrait-phone {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.blog-details-area-2 {
+    position: relative;
+
+    .blog-hr-2 {
+        height: 1px;
+        width: 100%;
+        background-color: $border-color;
+        position: absolute;
+        bottom: 53px;
+    }
 }

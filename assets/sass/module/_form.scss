@@ -5,19 +5,24 @@
             display: flex;
             gap: 50px;
             margin-bottom: 30px;
-            @include screen-1200{
+
+            @include screen-1200 {
                 gap: 30px;
             }
-            @include desktop{
+
+            @include desktop {
                 gap: 20px;
             }
-            @include tablet{
+
+            @include tablet {
                 gap: 20px;
             }
-            @include landscape-phone{
+
+            @include landscape-phone {
                 gap: 10px;
             }
-            @include portrait-phone{
+
+            @include portrait-phone {
                 gap: 10px;
             }
 
@@ -30,16 +35,20 @@
                 @include all-phone {
                     font-size: 24px;
                 }
-                @include screen-1200{
+
+                @include screen-1200 {
                     width: 330px;
                 }
-                @include desktop{
+
+                @include desktop {
                     width: 425px;
                 }
-                @include landscape-phone{
+
+                @include landscape-phone {
                     width: 320px;
                 }
-                @include portrait-phone{
+
+                @include portrait-phone {
                     width: 440px;
                     font-size: 18px;
                 }
@@ -51,6 +60,7 @@
                 border-bottom: 1px solid $border-color;
                 padding: 15px;
                 width: 560px;
+
                 &::placeholder {
                     color: $border-color;
                     font-size: 18px;
@@ -68,10 +78,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            @include landscape-phone{
+
+            @include landscape-phone {
                 margin-top: 50px;
             }
-            @include portrait-phone{
+
+            @include portrait-phone {
                 margin-top: 50px;
                 gap: 20px;
             }
@@ -79,6 +91,7 @@
             label {
                 a {
                     position: relative;
+
                     &::before {
                         content: '';
                         position: absolute;
@@ -90,6 +103,43 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.leave-reply {
+    margin-top: 60px;
+    form {
+        margin-top: 60px;
+        textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 0;
+            border-bottom: 1px solid $border-color;
+            padding-bottom: 60px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 0;
+            border-bottom: 1px solid $border-color;
+            padding-bottom: 20px;
+
+
+        }
+
+        #checkbox {
+            display: inline;
+            width: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            margin-top: 60px;
         }
     }
 }
