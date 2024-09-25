@@ -3419,12 +3419,13 @@
                 height: auto;
                 padding: 0 0 0 0;
                 margin: 0;
-                font-size: 18px;
+                font-size: 24px;
                 letter-spacing: 0.01em;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                text-transform: capitalize;
             }
 
             div.answer {
@@ -3444,7 +3445,7 @@
                     cursor: pointer;
                     line-height: 150%;
                     margin: 0 0 15px 0;
-                    font-size: 14px;
+                    font-size: 20px;
                 }
             }
         }

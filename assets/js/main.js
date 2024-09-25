@@ -281,22 +281,28 @@
             },
         });
 
-        // /service-details-bottom-faq
+        // // /service-details-bottom-faq
         $(document).ready(function () {
             $('.accordion-list > li > .answer').hide();
-
-            $('.accordion-list > li').click(function () {
+            $('.accordion-list > li').click(function (event) {
+                event.stopPropagation();
                 if ($(this).hasClass("active")) {
                     $(this).removeClass("active").find(".answer").slideUp();
+                    $(this).find("h3 i").removeClass('ri-subtract-fill').addClass('ri-add-fill');
                 } else {
                     $(".accordion-list > li.active .answer").slideUp();
                     $(".accordion-list > li.active").removeClass("active");
+                    $(".accordion-list > li h3 i").removeClass('ri-subtract-fill').addClass('ri-add-fill');
                     $(this).addClass("active").find(".answer").slideDown();
+                    $(this).find("h3 i").removeClass('ri-add-fill').addClass('ri-subtract-fill');
                 }
                 return false;
             });
-
         });
+
+
+
+
 
         //blog3
         var swiper = new Swiper(".blog3", {
