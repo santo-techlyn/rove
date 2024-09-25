@@ -1,5 +1,5 @@
 /* footer */
-.footer-area {  
+.footer-area {
     .main-footer {
         margin-top: 80px;
 
@@ -197,6 +197,7 @@
     .marquee-area {
         width: 100%;
         overflow-x: hidden;
+
         .text-marquee {
             border: 0;
             padding: 80px 0;
@@ -257,7 +258,11 @@
     .footer-section-top-right {
         position: relative;
 
-        @include tablet{
+        #copy-email {
+            text-transform: lowercase;
+        }
+
+        @include tablet {
             margin-top: 60px;
         }
 
@@ -299,46 +304,21 @@
 
 //footer-02
 .footer-marquee-area {
-    @include tablet {
-        padding-bottom: 50px;
-    }
-
-    .text-marquee {
-        overflow: hidden;
-        padding: 65px 0;
+    .home-2-top-marquee {
         border: 0;
-        border-bottom: 1px solid $border-color;
         border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
 
-        @include tablet {
-            padding: 80px 0;
-        }
-
-        @include all-phone {
-            padding: 50px 0;
-        }
-
-        .swiper-wrapper {
-            @include all-phone {
+        .scroll {
+            div {
+                display: flex;
                 align-items: center;
-            }
-        }
 
-        .swiper-slide {
-            @include tablet {
-                font-size: 100px;
-                padding: 0 20px;
-
-                img {
-                    width: 100px;
-                    margin-right: 40px;
-                }
-            }
-
-            @include all-phone {
-                img {
-                    width: 50px;
-                    height: auto;
+                span {
+                    img {
+                        width: 200px;
+                        margin: 0 20px;
+                    }
                 }
             }
         }
@@ -365,6 +345,18 @@
     }
 
     .footer-address-2 {
+        h4 {
+            a {
+                text-decoration: none;
+                transition: $transition-long;
+
+                &:hover {
+                    text-decoration: underline;
+                    transition: $transition-long;
+                }
+            }
+        }
+
         @include tablet {
             margin-top: 20px;
         }
@@ -514,13 +506,17 @@
                 padding: 0;
             }
 
-            @include all-phone {
+            @include landscape-phone{
                 font-size: 16px;
+                padding: 0;
+            }
+            @include portrait-phone{
+                font-size: 10px;
                 padding: 0;
             }
 
             @include screen-360 {
-                font-size: 10px;
+                font-size: 8px;
                 padding: 0;
             }
 
@@ -542,12 +538,15 @@
                     width: 35px;
                 }
 
-                @include all-phone {
-                    width: 30px;
+                @include landscape-phone {
+                    width: 25px;
+                }
+                @include portrait-phone {
+                    width: 20px;
                 }
 
                 @include screen-360 {
-                    width: 25px;
+                    width: 15px;
                 }
 
                 path {

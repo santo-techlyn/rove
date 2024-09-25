@@ -53,9 +53,9 @@
         let FooterSwiperTop = new Swiper('.footer-marquee-3', {
             spaceBetween: 0,
             centeredSlides: true,
-            speed: 3000,
+            speed: 2000,
             autoplay: {
-                delay: 1,
+                delay: 2,
             },
             loop: true,
             slidesPerView: 'auto',
@@ -380,7 +380,7 @@
             breakpoints: {
                 768: {
                     slidesPerView: 2,
-                    spaceBetween: 20
+                    spaceBetween: 80
                 }
             }
         });
