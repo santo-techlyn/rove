@@ -5174,6 +5174,9 @@ nav .main-menu li a {
     margin-top: 30px;
   }
 }
+.faq h3 {
+  text-transform: capitalize;
+}
 .faq ul.accordion-list {
   position: relative;
   display: block;
@@ -5520,27 +5523,27 @@ nav .main-menu li a {
 }
 .blog-sidebar .blog-hr {
   width: 1px;
-  height: 1550px;
+  height: 1538px;
   background-color: #B0B0B0;
   position: absolute;
   right: -70px;
-  top: -150px;
+  top: -140px;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .blog-sidebar .blog-hr {
-    height: 1590px;
+    height: 1582px;
     right: -20px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .blog-sidebar .blog-hr {
-    height: 1550px;
+    height: 1538px;
     right: -25px;
   }
 }
 @media (min-width: 1400px) and (max-width: 1919.98px) {
   .blog-sidebar .blog-hr {
-    height: 1550px;
+    height: 1538px;
   }
 }
 @media (max-width: 991.98px) {
