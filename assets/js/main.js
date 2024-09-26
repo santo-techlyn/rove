@@ -298,11 +298,7 @@
                 }
                 return false;
             });
-        });
-
-
-
-
+        }); 
 
         //blog3
         var swiper = new Swiper(".blog3", {
@@ -453,7 +449,6 @@
             setTimeout(showTime, 1000);
         }
         showTime();
-
     });
 
     $(window).on('scroll', function () {
@@ -464,11 +459,9 @@
         } else {
             $('.menu-area').removeClass("fixed-top");
         }
-
     });
 
     $(window).on('load', function () {
-
         // preloader
         var preLoder = $("#preloader");
         preLoder.fadeOut(0);

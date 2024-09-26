@@ -1174,22 +1174,7 @@
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/easing.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        //award hocer function
-        $('.tab-link').on('mouseenter', function (event) {
-            event.preventDefault(); // Prevent default action if necessary
-
-            var tab_id = $(this).attr('data-tab');
-
-            // Remove 'active' class from all tabs and content
-            $('.tab-link').removeClass('active');
-            $('.tab-content').removeClass('active');
-
-            // Add 'active' class to the hovered tab and the corresponding content
-            $(this).addClass('active');
-            $("#" + tab_id).addClass('active');
-        });
-    </script>
+    <script src="assets/js/home-3.js"></script>
 </body>
 
 </html>
