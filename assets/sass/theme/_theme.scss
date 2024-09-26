@@ -255,6 +255,9 @@
     .counter-text {
         width: 40%;
         margin: auto;
+        @include portrait-phone{
+            width: 50%;
+        }
 
         @include screen-1200 {
             font-size: 18px;
@@ -780,7 +783,7 @@
 
 .single-blog {
     @include portrait-phone {
-        margin-left: 20px;
+        margin:0 20px;
     }
 
     .blog-img {
@@ -2954,6 +2957,9 @@
             li {
                 border: 1px solid $border-color;
                 border-bottom: 0;
+                @include portrait-phone{
+                    padding-left: 20px;
+                }
 
                 &:first-child {
                     border: 0;
@@ -3149,8 +3155,10 @@
 
     .swiper {
         overflow: visible;
-        // padding-bottom: 120px;
         max-width: 1320px;
+        @include portrait-phone{
+            padding-bottom: 120px;
+        }
 
         .swiper-button-next {
             width: 50px;

@@ -2221,6 +2221,11 @@ nav .main-menu li a {
   width: 40%;
   margin: auto;
 }
+@media (max-width: 575.98px) {
+  .counter-single .counter-text {
+    width: 50%;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .counter-single .counter-text {
     font-size: 18px;
@@ -2719,7 +2724,7 @@ nav .main-menu li a {
 
 @media (max-width: 575.98px) {
   .single-blog {
-    margin-left: 20px;
+    margin: 0 20px;
   }
 }
 .single-blog .blog-img {
@@ -4726,6 +4731,11 @@ nav .main-menu li a {
   border: 1px solid #B0B0B0;
   border-bottom: 0;
 }
+@media (max-width: 575.98px) {
+  .award-area-3 .award-tab ul li {
+    padding-left: 20px;
+  }
+}
 .award-area-3 .award-tab ul li:first-child {
   border: 0;
   color: #141414;
@@ -4912,6 +4922,11 @@ nav .main-menu li a {
 .expert-team-area .swiper {
   overflow: visible;
   max-width: 1320px;
+}
+@media (max-width: 575.98px) {
+  .expert-team-area .swiper {
+    padding-bottom: 120px;
+  }
 }
 .expert-team-area .swiper .swiper-button-next, .expert-team-area .case-details-img-slider .swiper .swiper-button-prev, .case-details-img-slider .expert-team-area .swiper .swiper-button-prev {
   width: 50px;

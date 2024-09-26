@@ -1002,7 +1002,7 @@
                                     fill="black" />
                             </svg>
                         </div>
-                        <div class="swiper-slide">PRODUCT 
+                        <div class="swiper-slide">PRODUCT
                             <svg width="40" height="40" viewBox="0 0 58 58" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1010,7 +1010,7 @@
                                     fill="black" />
                             </svg>
                         </div>
-                        <div class="swiper-slide">ROVE 
+                        <div class="swiper-slide">ROVE
                             <svg width="40" height="40" viewBox="0 0 58 58" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1018,7 +1018,7 @@
                                     fill="black" />
                             </svg>
                         </div>
-                        <div class="swiper-slide">CREATIVE 
+                        <div class="swiper-slide">CREATIVE
                             <svg width="40" height="40" viewBox="0 0 58 58" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1026,15 +1026,7 @@
                                     fill="black" />
                             </svg>
                         </div>
-                        <div class="swiper-slide">CREATIVE AGENCY 
-                            <svg width="40" height="40" viewBox="0 0 58 58"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M32.2222 0H25.7778V21.2717L10.3208 5.81472L5.81471 10.3208L21.2717 25.7778H0V32.2222H21.2666L5.80253 47.6863L10.3111 52.1949L25.7778 36.7282V58H32.2222V36.7283L47.6898 52.1959L52.1958 47.6898L36.7283 32.2222H58V25.7778H36.7282L52.1844 10.3216L47.6758 5.81304L32.2222 21.2666V0Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                        <div class="swiper-slide">MARKETING 
+                        <div class="swiper-slide">CREATIVE AGENCY
                             <svg width="40" height="40" viewBox="0 0 58 58" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1042,7 +1034,7 @@
                                     fill="black" />
                             </svg>
                         </div>
-                        <div class="swiper-slide">PRODUCT 
+                        <div class="swiper-slide">MARKETING
                             <svg width="40" height="40" viewBox="0 0 58 58" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1050,7 +1042,7 @@
                                     fill="black" />
                             </svg>
                         </div>
-                        <div class="swiper-slide">ROVE 
+                        <div class="swiper-slide">PRODUCT
                             <svg width="40" height="40" viewBox="0 0 58 58" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1058,7 +1050,15 @@
                                     fill="black" />
                             </svg>
                         </div>
-                        <div class="swiper-slide">CREATIVE 
+                        <div class="swiper-slide">ROVE
+                            <svg width="40" height="40" viewBox="0 0 58 58" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32.2222 0H25.7778V21.2717L10.3208 5.81472L5.81471 10.3208L21.2717 25.7778H0V32.2222H21.2666L5.80253 47.6863L10.3111 52.1949L25.7778 36.7282V58H32.2222V36.7283L47.6898 52.1959L52.1958 47.6898L36.7283 32.2222H58V25.7778H36.7282L52.1844 10.3216L47.6758 5.81304L32.2222 21.2666V0Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <div class="swiper-slide">CREATIVE
                             <svg width="40" height="40" viewBox="0 0 58 58" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1174,6 +1174,22 @@
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/easing.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        //award hocer function
+        $('.tab-link').on('mouseenter', function (event) {
+            event.preventDefault(); // Prevent default action if necessary
+
+            var tab_id = $(this).attr('data-tab');
+
+            // Remove 'active' class from all tabs and content
+            $('.tab-link').removeClass('active');
+            $('.tab-content').removeClass('active');
+
+            // Add 'active' class to the hovered tab and the corresponding content
+            $(this).addClass('active');
+            $("#" + tab_id).addClass('active');
+        });
+    </script>
 </body>
 
 </html>
