@@ -178,7 +178,8 @@
                     }
 
                     @include desktop {
-                        top: 50px;
+                        top: 90px;
+                        right: 10px;
                     }
 
                     @include tablet {
@@ -318,6 +319,18 @@
                     img {
                         width: 200px;
                         margin: 0 20px;
+                        @include desktop{
+                            width: 120px;
+                        }
+                        @include tablet{
+                            width: 85px;
+                        }
+                        @include landscape-phone{
+                            width: 70px;
+                        }
+                        @include portrait-phone{
+                            width: 50px;
+                        }
                     }
                 }
             }

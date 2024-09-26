@@ -146,6 +146,9 @@
             width: 60%;
             margin: 10px auto 0;
             text-transform: capitalize;
+            @include desktop{
+                width: 80%;
+            }
         }
 
         @include tablet {
@@ -1274,6 +1277,12 @@
 
         @include tablet {
             font-size: 100px;
+        }
+        @include landscape-phone {
+            font-size: 80px;
+        }
+        @include portrait-phone {
+            font-size: 55px;
         }
     }
 }
@@ -3392,6 +3401,9 @@
 }
 
 .faq {
+    @include all-phone-tablet{
+        margin-top: 30px;
+    }
     ul.accordion-list {
         position: relative;
         display: block;
@@ -3399,6 +3411,9 @@
         margin: 0;
         list-style: none;
         margin-top: 30px;
+        @include desktop{
+            margin-top: 0;
+        }
 
         li {
             position: relative;
@@ -3408,6 +3423,9 @@
             border-bottom: 1px solid $border-color;
             padding: 30px 0;
             cursor: pointer;
+            @include desktop{
+                padding: 20px 0;
+            }
 
             &.active {
                 h3 {
@@ -3432,6 +3450,9 @@
                 align-items: center;
                 justify-content: space-between;
                 text-transform: capitalize;
+                @include desktop{
+                    font-size: 20px;
+                }
             }
 
             div.answer {
@@ -3467,6 +3488,10 @@
         .case-main-img {
             height: 486px;
 
+
+            @include desktop {
+                height: auto;
+            }
             @include all-phone-tablet {
                 height: auto;
             }
@@ -3584,7 +3609,9 @@
         padding: 70px 55px;
         top: 80px;
         background-color: $white-color;
-
+        @include desktop{
+            padding: 30px 25px;
+        }
     }
 }
 
