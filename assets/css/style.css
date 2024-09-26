@@ -593,6 +593,7 @@ nav .main-menu li a {
   font-size: 200px;
   color: transparent;
   -webkit-text-stroke: 2px #6D6D6D;
+  transition: all 0.3s ease-in;
 }
 .footer-area .marquee-area .text-marquee .swiper-slide:hover {
   color: #6D6D6D;

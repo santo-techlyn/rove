@@ -219,7 +219,7 @@
                 font-size: 200px;
                 color: transparent;
                 -webkit-text-stroke: 2px $secondary-color;
-
+                transition: $transition;
 
                 &:hover {
                     color: $secondary-color;
