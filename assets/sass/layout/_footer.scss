@@ -317,19 +317,19 @@
 
                 span {
                     img {
-                        width: 200px;
+                        width: 140px;
                         margin: 0 20px;
                         @include desktop{
-                            width: 120px;
+                            width: 90px;
                         }
                         @include tablet{
-                            width: 85px;
-                        }
-                        @include landscape-phone{
                             width: 70px;
                         }
+                        @include landscape-phone{
+                            width: 55px;
+                        }
                         @include portrait-phone{
-                            width: 50px;
+                            width: 40px;
                         }
                     }
                 }
