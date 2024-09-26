@@ -285,6 +285,42 @@
     }
 }
 
+.counter-single-about-2{
+    @extend .counter-single;
+    border: 1px solid $border-color;
+    margin: 0 auto 30px;
+    padding: 25px 30px;
+    .counter-text {
+        width: 50%;
+    }
+    @include desktop{
+        padding: 35px 5px;
+        .counter-text {
+            width: 60%;
+        }
+    }
+    @include screen-360{
+        padding: 35px 0px;
+        .counter-text {
+            width: 80%;
+        }
+        .counter-number {
+            .counter{
+                font-size: 28px;
+            }
+            
+        }
+    }
+    @include portrait-phone{
+        .counter-text {
+            width: 80%;
+        }
+    }
+    @include all-phone-tablet{
+        padding: 20px;
+    }
+}
+
 .section-top {
     padding-bottom: 30px;
     border-bottom: 1px solid $border-color;
@@ -3159,6 +3195,17 @@
         .mission-text {
             .title {
                 border-bottom: 1px solid $border-color;
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                padding-bottom: 20px;
+                @include screen-360{
+                    gap: 10px;
+                }
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
             }
         }
     }
