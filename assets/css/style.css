@@ -3114,7 +3114,7 @@ nav .main-menu li a {
 }
 .text-marquee .swiper-slide {
   text-align: center;
-  font-size: 200px;
+  font-size: 150px;
   font-weight: 600;
   background: #fff;
   display: flex;
@@ -3143,7 +3143,6 @@ nav .main-menu li a {
 
 .home-2-top-marquee {
   border: 1px solid #141414;
-  border-right: 0;
   padding: 30px 0;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -3173,23 +3172,23 @@ nav .main-menu li a {
 }
 @keyframes animate {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 @keyframes animate2 {
   0% {
-    transform: translateX(-200%);
+    transform: translateX(200%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 .home-2-top-marquee .scroll div span {
   display: inline-flex;
-  font-size: 200px;
+  font-size: 150px;
   font-weight: 600;
   margin: 10px;
   text-transform: uppercase;
