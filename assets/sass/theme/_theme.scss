@@ -3156,9 +3156,7 @@
     .swiper {
         overflow: visible;
         max-width: 1320px;
-        @include portrait-phone{
-            padding-bottom: 120px;
-        }
+        padding-bottom: 120px;
 
         .swiper-button-next {
             width: 50px;
