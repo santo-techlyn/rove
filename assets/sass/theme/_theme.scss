@@ -1217,7 +1217,7 @@
 
     .swiper-slide {
         text-align: center;
-        font-size: 150px;
+        font-size: 200px;
         font-weight: 600;
         background: #fff;
         display: flex;
@@ -1321,7 +1321,6 @@
     }
 }
 
-
 .brand-marquee-area {
 
     .scroll {
@@ -1416,7 +1415,7 @@
             transform: rotate(270deg);
             width: 819px;
             top: 284px;
-            left: -267px;
+            left: -280px;
 
             @include all-phone {
                 width: 100%;
@@ -1437,6 +1436,7 @@
             }
 
             .swiper-slide {
+                text-transform: uppercase;
                 @include tablet {
                     font-size: 100px;
                 }
@@ -1557,10 +1557,10 @@
 
         .text-marquee {
             position: absolute;
-            width: 1015px;
+            width: 930px;
             transform: rotate(90deg);
-            top: 380px;
-            right: -374px;
+            top: 340px;
+            right: -340px;
 
             .swiper-slide {
                 @include tablet {
@@ -1576,7 +1576,7 @@
 
             @include screen-1400 {
                 width: 930px;
-                top: 330px;
+                top: 340px;
                 right: -330px;
             }
 
@@ -1587,8 +1587,8 @@
             }
 
             @include desktop {
-                width: 984px;
-                top: 370px;
+                width: 990px;
+                top: 368px;
                 right: -364px;
             }
 
@@ -1938,7 +1938,7 @@
 
             a {
                 color: $border-color;
-                font-weight: 800;
+                font-weight: 500;
             }
         }
     }
