@@ -3586,6 +3586,12 @@
 }
 
 .case-details-area {
+    .case-details-img{
+        h3{
+            text-transform: capitalize;
+            font-size: 48px;
+        }
+    }
     .overview-top {
         border-bottom: 1px solid $border-color;
         padding-bottom: 20px;

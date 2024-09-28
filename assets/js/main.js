@@ -417,9 +417,9 @@
                 clickStatus.style.display = 'none'; // Show the "Copied!" message
 
                 // Hide the message after 2 seconds
-                // setTimeout(function() {
-                //     copyStatus.style.display = 'none';
-                // }, 2000);
+                setTimeout(function() {
+                    copyStatus.style.display = 'none';
+                }, 5000);
             }).catch(function (err) {
                 // Handle error if unable to copy
                 console.error('Could not copy text: ', err);

@@ -5350,6 +5350,10 @@ nav .main-menu li a {
   }
 }
 
+.case-details-area .case-details-img h3 {
+  text-transform: capitalize;
+  font-size: 48px;
+}
 .case-details-area .overview-top {
   border-bottom: 1px solid #B0B0B0;
   padding-bottom: 20px;
