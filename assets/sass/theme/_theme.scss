@@ -146,7 +146,8 @@
             width: 60%;
             margin: 10px auto 0;
             text-transform: capitalize;
-            @include desktop{
+
+            @include desktop {
                 width: 80%;
             }
         }
@@ -258,7 +259,8 @@
     .counter-text {
         width: 40%;
         margin: auto;
-        @include portrait-phone{
+
+        @include portrait-phone {
             width: 50%;
         }
 
@@ -285,38 +287,46 @@
     }
 }
 
-.counter-single-about-2{
+.counter-single-about-2 {
     @extend .counter-single;
     border: 1px solid $border-color;
     margin: 0 auto 30px;
     padding: 25px 30px;
+
     .counter-text {
         width: 50%;
     }
-    @include desktop{
+
+    @include desktop {
         padding: 35px 5px;
+
         .counter-text {
             width: 60%;
         }
     }
-    @include screen-360{
+
+    @include screen-360 {
         padding: 35px 0px;
+
         .counter-text {
             width: 80%;
         }
+
         .counter-number {
-            .counter{
+            .counter {
                 font-size: 28px;
             }
-            
+
         }
     }
-    @include portrait-phone{
+
+    @include portrait-phone {
         .counter-text {
             width: 80%;
         }
     }
-    @include all-phone-tablet{
+
+    @include all-phone-tablet {
         padding: 20px;
     }
 }
@@ -822,7 +832,7 @@
 
 .single-blog {
     @include portrait-phone {
-        margin:0 20px;
+        margin: 0 20px;
     }
 
     .blog-img {
@@ -1018,7 +1028,6 @@
 }
 
 .hero-home-2 {
-
     @include all-phone {
         .home-2-top-marquee {
             padding: 0;
@@ -1184,16 +1193,19 @@
             }
         }
 
-        .hero-content-btn {
-            display: flex;
+        .secondary-btn {
             gap: 20px;
-            align-items: center;
-            font-size: 18px;
 
-            img {
-                width: 20px;
+            .secondary-icon {
+                width: 25px;
+                height: 20px;
                 transform: rotate(90deg);
+            }
 
+            &:hover {
+                .secondary-icon {
+                    transform: rotate(0deg);
+                }
             }
         }
     }
@@ -1227,6 +1239,7 @@
         position: relative;
         overflow: hidden;
         padding: 0 50px;
+        text-transform: uppercase;
 
         @include all-phone {
             font-size: 50px;
@@ -1289,11 +1302,11 @@
 
     @keyframes animate2 {
         0% {
-            transform: translateX(200%);
+            transform: translateX(0);
         }
 
         100% {
-            transform: translateX(-100%);
+            transform: translateX(-200%);
         }
     }
 
@@ -1312,14 +1325,17 @@
         @include tablet {
             font-size: 100px;
         }
+
         @include landscape-phone {
             font-size: 80px;
         }
+
         @include portrait-phone {
             font-size: 55px;
         }
     }
 }
+
 
 .brand-marquee-area {
 
@@ -1343,26 +1359,6 @@
     .scroll .brand-marquee-container:nth-child(2) {
         animation: animate2 var(--t) linear infinite;
         animation-delay: calc(var(--t)/-2);
-    }
-
-    @keyframes animate {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        100% {
-            transform: translateX(100%);
-        }
-    }
-
-    @keyframes animate2 {
-        0% {
-            transform: translateX(-200%);
-        }
-
-        100% {
-            transform: translateX(0);
-        }
     }
 }
 
@@ -1437,6 +1433,7 @@
 
             .swiper-slide {
                 text-transform: uppercase;
+
                 @include tablet {
                     font-size: 100px;
                 }
@@ -1644,6 +1641,8 @@
 
 .case-area-2 {
     .case-single {
+        margin-bottom: 0;
+
         .hover-state {
             width: 130px;
             height: 130px;
@@ -1685,16 +1684,6 @@
                 width: 100%;
                 height: 400px;
             }
-
-            // @include tablet {
-            //     width: 430px;
-            //     height: 330px;
-            // }
-
-            // @include portrait-phone {
-            //     width: 430px;
-            //     height: 330px;
-            // }
         }
     }
 
@@ -2132,29 +2121,47 @@
             font-size: 72px;
             font-weight: 600;
             position: relative;
+            text-transform: uppercase;
 
             @include desktop {
-                font-size: 60px
+                font-size: 55px
             }
 
             @include tablet {
-                font-size: 94px;
+                font-size: 80px;
             }
 
             @include portrait-phone {
-                font-size: 50px;
+                font-size: 40px;
             }
 
             @include screen-360 {
-                font-size: 43px;
+                font-size: 30px;
+            }
+
+            .vector-1 {
+                @include portrait-phone {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                @include screen-360 {
+                    width: 25px;
+                    height: 25px;
+                }
             }
 
             .vector-2 {
+                @include portrait-phone {
+                    width: 40px;
+                    height: 40px;
+                }
+
                 @include screen-360 {
                     position: absolute;
-                    bottom: 55px;
-                    width: 35px;
-                    right: 37px;
+                    bottom: 40px;
+                    width: 25px;
+                    right: 8px;
                 }
             }
 
@@ -2186,16 +2193,17 @@
                 }
 
                 @include screen-360 {
-                    right: -65px;
-                    bottom: -2px;
+                    right: -35px;
+                    bottom: 0px;
+                    width: 30px;
                 }
             }
         }
 
         .hero-3-btn {
             position: absolute;
-            right: -222px;
-            bottom: -190px;
+            right: -230px;
+            bottom: -240px;
 
             @include desktop {
                 right: -190px;
@@ -2285,7 +2293,7 @@
 
     .text-content-1 {
         font-size: 64px;
-        font-weight: 600;
+        font-weight: 400;
         text-transform: uppercase;
         display: flex;
         align-items: center;
@@ -2394,7 +2402,7 @@
 
 .section-top-3 {
     h2 {
-        color: $secondary-color;
+        color: $primary-color;
         text-transform: capitalize;
     }
 }
@@ -2403,6 +2411,7 @@
     text-align: center;
     border: 1px solid $border-color;
     padding: 70px 100px;
+    margin-top: 25px;
 
     @include screen-1200 {
         padding: 50px 70px;
@@ -2543,11 +2552,7 @@
                 transform: scale(1.2);
                 transition: $transition-long;
             }
-
-
         }
-
-
     }
 
     .case-3-content {
@@ -2556,8 +2561,13 @@
         border-left: 1px solid $border-color;
         height: 100%;
 
-        h3{
+        p{
+            color: $secondary-color;
+        }
+
+        h3 {
             text-transform: capitalize;
+            font-size: 42px;
         }
 
         @include desktop {
@@ -2666,6 +2676,10 @@
 
     @include screen-360 {
         gap: 20px;
+    }
+
+    h5{
+        font-weight: 500;
     }
 
     img {
@@ -2977,6 +2991,12 @@
     }
 
     .single-blog {
+        .blog-thumble {
+            a{
+                color: $secondary-color;
+            } 
+        }
+
         .blog-img {
             padding: 30px;
             border: 1px solid $border-color;
@@ -3005,7 +3025,8 @@
             li {
                 border: 1px solid $border-color;
                 border-bottom: 0;
-                @include portrait-phone{
+
+                @include portrait-phone {
                     padding-left: 20px;
                 }
 
@@ -3196,10 +3217,12 @@
                 align-items: center;
                 gap: 25px;
                 padding-bottom: 20px;
-                @include screen-360{
+
+                @include screen-360 {
                     gap: 10px;
                 }
-                img{
+
+                img {
                     width: 50px;
                     height: 50px;
                 }
@@ -3214,7 +3237,7 @@
     .swiper {
         overflow: visible;
         max-width: 1320px;
-        padding-bottom: 120px;
+        // padding-bottom: 120px;
 
         .swiper-button-next {
             width: 50px;
@@ -3415,6 +3438,11 @@
 }
 
 .services-single-details {
+    .services-details-top-content{
+        h3{
+            text-transform: capitalize;
+        }
+    }
     .service-details-2nd-content {
         ul {
             margin-top: 40px;
@@ -3450,12 +3478,14 @@
 }
 
 .faq {
-    @include all-phone-tablet{
+    @include all-phone-tablet {
         margin-top: 30px;
     }
-    h3{
+
+    h3 {
         text-transform: capitalize;
     }
+
     ul.accordion-list {
         position: relative;
         display: block;
@@ -3463,7 +3493,8 @@
         margin: 0;
         list-style: none;
         margin-top: 30px;
-        @include desktop{
+
+        @include desktop {
             margin-top: 0;
         }
 
@@ -3475,7 +3506,8 @@
             border-bottom: 1px solid $border-color;
             padding: 30px 0;
             cursor: pointer;
-            @include desktop{
+
+            @include desktop {
                 padding: 20px 0;
             }
 
@@ -3488,7 +3520,7 @@
             }
 
             h3 {
-                font-weight: 600;
+                font-weight: 500;
                 position: relative;
                 display: block;
                 width: 100%;
@@ -3502,7 +3534,8 @@
                 align-items: center;
                 justify-content: space-between;
                 text-transform: capitalize;
-                @include desktop{
+
+                @include desktop {
                     font-size: 20px;
                 }
             }
@@ -3544,6 +3577,7 @@
             @include desktop {
                 height: auto;
             }
+
             @include all-phone-tablet {
                 height: auto;
             }
@@ -3661,7 +3695,8 @@
         padding: 70px 55px;
         top: 80px;
         background-color: $white-color;
-        @include desktop{
+
+        @include desktop {
             padding: 30px 25px;
         }
     }
@@ -4226,7 +4261,7 @@
     .error-content {
         text-align: center;
 
-        h3{
+        h3 {
             margin-bottom: 100px;
         }
 

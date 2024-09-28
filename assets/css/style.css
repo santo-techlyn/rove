@@ -677,7 +677,7 @@ nav .main-menu li a {
   border: 0;
   border-top: 1px solid #B0B0B0;
   border-bottom: 1px solid #B0B0B0;
-  padding: 140px 0;
+  padding: 60px 0;
 }
 .footer-marquee-area .home-2-top-marquee .scroll div {
   display: flex;
@@ -788,7 +788,7 @@ nav .main-menu li a {
 }
 .footer-area-3 .footer-3-right .footer-email {
   font-size: 94px;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .footer-area-3 .footer-3-right .footer-email {
@@ -824,7 +824,7 @@ nav .main-menu li a {
   display: flex;
   text-align: center;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .footer-area-3 .footer-3-right .footer-info {
@@ -3088,15 +3088,16 @@ nav .main-menu li a {
   color: #ffffff;
   line-height: 35px;
 }
-.hero-home-2 .hero-content .hero-content-btn {
-  display: flex;
+.hero-home-2 .hero-content .secondary-btn {
   gap: 20px;
-  align-items: center;
-  font-size: 18px;
 }
-.hero-home-2 .hero-content .hero-content-btn img {
-  width: 20px;
+.hero-home-2 .hero-content .secondary-btn .secondary-icon {
+  width: 25px;
+  height: 20px;
   transform: rotate(90deg);
+}
+.hero-home-2 .hero-content .secondary-btn:hover .secondary-icon {
+  transform: rotate(0deg);
 }
 
 .text-marquee {
@@ -3124,6 +3125,7 @@ nav .main-menu li a {
   position: relative;
   overflow: hidden;
   padding: 0 50px;
+  text-transform: uppercase;
 }
 @media (max-width: 767.98px) {
   .text-marquee .swiper-slide {
@@ -3180,10 +3182,10 @@ nav .main-menu li a {
 }
 @keyframes animate2 {
   0% {
-    transform: translateX(200%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 }
 .home-2-top-marquee .scroll div span {
@@ -3232,22 +3234,6 @@ nav .main-menu li a {
 .brand-marquee-area .scroll .brand-marquee-container:nth-child(2) {
   animation: animate2 var(--t) linear infinite;
   animation-delay: calc(var(--t) / -2);
-}
-@keyframes animate {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-@keyframes animate2 {
-  0% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 .service-area .section-top-2 .secondary-btn {
@@ -3524,6 +3510,9 @@ nav .main-menu li a {
 
 .case-area-2 {
   overflow-x: hidden;
+}
+.case-area-2 .case-single {
+  margin-bottom: 0;
 }
 .case-area-2 .case-single .hover-state {
   width: 130px;
@@ -3956,33 +3945,52 @@ nav .main-menu li a {
   font-size: 72px;
   font-weight: 600;
   position: relative;
+  text-transform: uppercase;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .hero-area-3 .hero-3-content .heading-3 {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .hero-area-3 .hero-3-content .heading-3 {
-    font-size: 94px;
+    font-size: 80px;
   }
 }
 @media (max-width: 575.98px) {
   .hero-area-3 .hero-3-content .heading-3 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media (max-width: 360px) {
   .hero-area-3 .hero-3-content .heading-3 {
-    font-size: 43px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-area-3 .hero-3-content .heading-3 .vector-1 {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 360px) {
+  .hero-area-3 .hero-3-content .heading-3 .vector-1 {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-area-3 .hero-3-content .heading-3 .vector-2 {
+    width: 40px;
+    height: 40px;
   }
 }
 @media (max-width: 360px) {
   .hero-area-3 .hero-3-content .heading-3 .vector-2 {
     position: absolute;
-    bottom: 55px;
-    width: 35px;
-    right: 37px;
+    bottom: 40px;
+    width: 25px;
+    right: 8px;
   }
 }
 .hero-area-3 .hero-3-content .heading-3 .vector-3 {
@@ -4018,14 +4026,15 @@ nav .main-menu li a {
 }
 @media (max-width: 360px) {
   .hero-area-3 .hero-3-content .heading-3 .vector-3 {
-    right: -65px;
-    bottom: -2px;
+    right: -35px;
+    bottom: 0px;
+    width: 30px;
   }
 }
 .hero-area-3 .hero-3-content .hero-3-btn {
   position: absolute;
-  right: -222px;
-  bottom: -190px;
+  right: -230px;
+  bottom: -240px;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .hero-area-3 .hero-3-content .hero-3-btn {
@@ -4117,7 +4126,7 @@ nav .main-menu li a {
 }
 .home-3-marquee .text-content-1 {
   font-size: 64px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -4241,7 +4250,7 @@ nav .main-menu li a {
 }
 
 .section-top-3 h2 {
-  color: #6D6D6D;
+  color: #141414;
   text-transform: capitalize;
 }
 
@@ -4249,6 +4258,7 @@ nav .main-menu li a {
   text-align: center;
   border: 1px solid #B0B0B0;
   padding: 70px 100px;
+  margin-top: 25px;
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .single-feature-3 {
@@ -4383,8 +4393,12 @@ nav .main-menu li a {
   border-left: 1px solid #B0B0B0;
   height: 100%;
 }
+.single-case-3 .case-3-content p {
+  color: #6D6D6D;
+}
 .single-case-3 .case-3-content h3 {
   text-transform: capitalize;
+  font-size: 42px;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .single-case-3 .case-3-content {
@@ -4495,6 +4509,9 @@ nav .main-menu li a {
   .testimonial-author {
     gap: 20px;
   }
+}
+.testimonial-author h5 {
+  font-weight: 500;
 }
 .testimonial-author img {
   width: 80px;
@@ -4798,6 +4815,9 @@ nav .main-menu li a {
 .blog-3-area .swiper .swiper-button-prev::after {
   display: none;
 }
+.blog-3-area .single-blog .blog-thumble a {
+  color: #6D6D6D;
+}
 .blog-3-area .single-blog .blog-img {
   padding: 30px;
   border: 1px solid #B0B0B0;
@@ -5020,7 +5040,6 @@ nav .main-menu li a {
 .expert-team-area .swiper {
   overflow: visible;
   max-width: 1320px;
-  padding-bottom: 120px;
 }
 .expert-team-area .swiper .swiper-button-next, .expert-team-area .case-details-img-slider .swiper .swiper-button-prev, .case-details-img-slider .expert-team-area .swiper .swiper-button-prev {
   width: 50px;
@@ -5201,6 +5220,9 @@ nav .main-menu li a {
   }
 }
 
+.services-single-details .services-details-top-content h3 {
+  text-transform: capitalize;
+}
 .services-single-details .service-details-2nd-content ul {
   margin-top: 40px;
 }
@@ -5270,7 +5292,7 @@ nav .main-menu li a {
   transform: rotate(45deg);
 }
 .faq ul.accordion-list li h3 {
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   display: block;
   width: 100%;

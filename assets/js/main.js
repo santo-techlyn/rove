@@ -217,7 +217,7 @@
             breakpoints: {
                 992: {
                     slidesPerView: 2,
-                    spaceBetween: 20
+                    spaceBetween: 50
                 }
             }
         });
@@ -281,7 +281,7 @@
             },
         });
 
-        // // /service-details-bottom-faq
+        // /service-details-bottom-faq
         $(document).ready(function () {
             $('.accordion-list > li > .answer').hide();
             $('.accordion-list > li').click(function (event) {
@@ -323,7 +323,7 @@
         });
         $('.rewards-single:nth-child(2)').addClass('active');
 
-        // magnific popup init
+        // magnific video popup init
         $(".popup-gallery").magnificPopup({
             delegate: '.popup-img',
             type: 'image',
