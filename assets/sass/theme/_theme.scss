@@ -2561,7 +2561,7 @@
         border-left: 1px solid $border-color;
         height: 100%;
 
-        p{
+        p {
             color: $secondary-color;
         }
 
@@ -2678,7 +2678,7 @@
         gap: 20px;
     }
 
-    h5{
+    h5 {
         font-weight: 500;
     }
 
@@ -2992,9 +2992,9 @@
 
     .single-blog {
         .blog-thumble {
-            a{
+            a {
                 color: $secondary-color;
-            } 
+            }
         }
 
         .blog-img {
@@ -3438,11 +3438,12 @@
 }
 
 .services-single-details {
-    .services-details-top-content{
-        h3{
+    .services-details-top-content {
+        h3 {
             text-transform: capitalize;
         }
     }
+
     .service-details-2nd-content {
         ul {
             margin-top: 40px;
@@ -3586,12 +3587,13 @@
 }
 
 .case-details-area {
-    .case-details-img{
-        h3{
+    .case-details-img {
+        h3 {
             text-transform: capitalize;
             font-size: 48px;
         }
     }
+
     .overview-top {
         border-bottom: 1px solid $border-color;
         padding-bottom: 20px;
@@ -3846,6 +3848,12 @@
 
         @include portrait-phone {
             margin-left: 0;
+        }
+
+        .blog-thumble {
+            a {
+                color: $secondary-color;
+            }
         }
     }
 }

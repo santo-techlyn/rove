@@ -5555,6 +5555,9 @@ nav .main-menu li a {
     margin-left: 0;
   }
 }
+.blog-page-area .single-blog .blog-thumble a {
+  color: #6D6D6D;
+}
 
 .blog-pagination {
   display: flex;
