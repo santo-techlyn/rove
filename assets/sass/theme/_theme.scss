@@ -208,7 +208,8 @@
         }
 
         p:nth-child(2) {
-            margin-bottom: 150px;
+            margin-bottom: 120px;
+            margin-top: 30px;
 
             @include screen-1200 {
                 margin-bottom: 50px;
@@ -1336,7 +1337,6 @@
     }
 }
 
-
 .brand-marquee-area {
 
     .scroll {
@@ -1359,6 +1359,26 @@
     .scroll .brand-marquee-container:nth-child(2) {
         animation: animate2 var(--t) linear infinite;
         animation-delay: calc(var(--t)/-2);
+    }
+
+    @keyframes animate {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes animate2 {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-200%);
+        }
     }
 }
 
@@ -1566,8 +1586,8 @@
             }
 
             @include screen-1920 {
-                width: 940px;
-                top: 335px;
+                width: 928px;
+                top: 338px;
                 right: -345px;
             }
 
@@ -2404,6 +2424,11 @@
     h2 {
         color: $primary-color;
         text-transform: capitalize;
+
+        span {
+            font-family: $primary-font;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -2563,6 +2588,7 @@
 
         p {
             color: $secondary-color;
+            margin-bottom: 0;
         }
 
         h3 {
@@ -3237,7 +3263,7 @@
     .swiper {
         overflow: visible;
         max-width: 1320px;
-        // padding-bottom: 120px;
+        padding-bottom: 120px;
 
         .swiper-button-next {
             width: 50px;
@@ -3357,6 +3383,12 @@
     display: flex;
     gap: 40px;
 
+    .working-process-content {
+        h3 {
+            text-transform: capitalize;
+        }
+    }
+
     @include desktop {
         gap: 10px;
     }
@@ -3375,7 +3407,6 @@
         @include desktop {
             font-size: 22px;
         }
-
     }
 }
 
@@ -3722,6 +3753,10 @@
 .case-details-img-slider {
 
     .case-details-image-slider-content {
+        h5 {
+            text-decoration: underline;
+        }
+
         ul {
             li {
                 margin-bottom: 15px;
@@ -3837,7 +3872,6 @@
 }
 
 //blog-pages
-
 .blog-page-area {
     .single-blog {
         margin-top: 50px;
@@ -3852,6 +3886,7 @@
 
         .blog-thumble {
             a {
+
                 color: $secondary-color;
             }
         }
@@ -3944,6 +3979,10 @@
     }
 
     .categories {
+        h3 {
+            text-transform: capitalize;
+        }
+
         span {
             display: block;
             margin-bottom: 20px;
@@ -3955,6 +3994,10 @@
     }
 
     .search {
+        h3 {
+            text-transform: capitalize;
+        }
+
         margin-top: 60px;
 
         .blog-sidebar-search {
@@ -3990,10 +4033,18 @@
     }
 
     .recent-posts {
+        h3 {
+            text-transform: capitalize;
+        }
+
         margin-top: 60px;
     }
 
     .tags {
+        h3 {
+            text-transform: capitalize;
+        }
+
         margin-top: 60px;
 
         span {
@@ -4011,6 +4062,10 @@
     }
 
     .follow-us {
+        h3 {
+            text-transform: capitalize;
+        }
+
         margin-top: 60px;
     }
 }

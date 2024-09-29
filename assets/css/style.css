@@ -2194,7 +2194,8 @@ nav .main-menu li a {
   }
 }
 .about-area .about-content p:nth-child(2) {
-  margin-bottom: 150px;
+  margin-bottom: 120px;
+  margin-top: 30px;
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .about-area .about-content p:nth-child(2) {
@@ -3235,6 +3236,22 @@ nav .main-menu li a {
   animation: animate2 var(--t) linear infinite;
   animation-delay: calc(var(--t) / -2);
 }
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
 
 .service-area .section-top-2 .secondary-btn {
   margin-top: 10px;
@@ -3434,8 +3451,8 @@ nav .main-menu li a {
 }
 @media (min-width: 1920px) {
   .feature-area-2 .feature-vertical-marquee .text-marquee {
-    width: 940px;
-    top: 335px;
+    width: 928px;
+    top: 338px;
     right: -345px;
   }
 }
@@ -4253,6 +4270,10 @@ nav .main-menu li a {
   color: #141414;
   text-transform: capitalize;
 }
+.section-top-3 h2 span {
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-decoration: underline;
+}
 
 .single-feature-3 {
   text-align: center;
@@ -4395,6 +4416,7 @@ nav .main-menu li a {
 }
 .single-case-3 .case-3-content p {
   color: #6D6D6D;
+  margin-bottom: 0;
 }
 .single-case-3 .case-3-content h3 {
   text-transform: capitalize;
@@ -5040,6 +5062,7 @@ nav .main-menu li a {
 .expert-team-area .swiper {
   overflow: visible;
   max-width: 1320px;
+  padding-bottom: 120px;
 }
 .expert-team-area .swiper .swiper-button-next, .expert-team-area .case-details-img-slider .swiper .swiper-button-prev, .case-details-img-slider .expert-team-area .swiper .swiper-button-prev {
   width: 50px;
@@ -5147,6 +5170,9 @@ nav .main-menu li a {
 .single-working-process {
   display: flex;
   gap: 40px;
+}
+.single-working-process .working-process-content h3 {
+  text-transform: capitalize;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .single-working-process {
@@ -5464,6 +5490,9 @@ nav .main-menu li a {
   border: 1px solid #B0B0B0;
 }
 
+.case-details-img-slider .case-details-image-slider-content h5 {
+  text-decoration: underline;
+}
 .case-details-img-slider .case-details-image-slider-content ul li {
   margin-bottom: 15px;
 }
@@ -5642,6 +5671,9 @@ nav .main-menu li a {
     display: none;
   }
 }
+.blog-sidebar .categories h3 {
+  text-transform: capitalize;
+}
 .blog-sidebar .categories span {
   display: block;
   margin-bottom: 20px;
@@ -5651,6 +5683,9 @@ nav .main-menu li a {
 }
 .blog-sidebar .search {
   margin-top: 60px;
+}
+.blog-sidebar .search h3 {
+  text-transform: capitalize;
 }
 .blog-sidebar .search .blog-sidebar-search {
   position: relative;
@@ -5687,8 +5722,14 @@ nav .main-menu li a {
 .blog-sidebar .recent-posts {
   margin-top: 60px;
 }
+.blog-sidebar .recent-posts h3 {
+  text-transform: capitalize;
+}
 .blog-sidebar .tags {
   margin-top: 60px;
+}
+.blog-sidebar .tags h3 {
+  text-transform: capitalize;
 }
 .blog-sidebar .tags span {
   font-size: 20px;
@@ -5703,6 +5744,9 @@ nav .main-menu li a {
 }
 .blog-sidebar .follow-us {
   margin-top: 60px;
+}
+.blog-sidebar .follow-us h3 {
+  text-transform: capitalize;
 }
 
 .single-post {
