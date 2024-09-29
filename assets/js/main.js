@@ -92,8 +92,6 @@
             disableOnInteraction: true
         });
 
-        //vertical-marquee
-
         //case swiper
         var swiper = new Swiper(".case-swiper", {
             slidesPerView: 1,
@@ -281,7 +279,7 @@
             },
         });
 
-        // /service-details-bottom-faq
+        // service-details-bottom-faq
         $(document).ready(function () {
             $('.accordion-list > li > .answer').hide();
             $('.accordion-list > li').click(function (event) {
@@ -298,7 +296,7 @@
                 }
                 return false;
             });
-        }); 
+        });
 
         //blog3
         var swiper = new Swiper(".blog3", {
@@ -403,28 +401,94 @@
             }
         });
 
-        //copy email
-        document.getElementById('copy-email').addEventListener('click', function () {
-            // Get the email text
-            var email = this.innerText;
 
-            // Copy the email to the clipboard using Clipboard API
-            navigator.clipboard.writeText(email).then(function () {
-                // Successfully copied to clipboard
-                var copyStatus = document.getElementById('copyStatus');
-                var clickStatus = document.getElementById('clickStatus');
-                copyStatus.style.display = 'inline'; // Show the "Copied!" message
-                clickStatus.style.display = 'none'; // Show the "Copied!" message
-
-                // Hide the message after 2 seconds
-                setTimeout(function() {
-                    copyStatus.style.display = 'none';
-                }, 5000);
-            }).catch(function (err) {
-                // Handle error if unable to copy
-                console.error('Could not copy text: ', err);
+        //back to top
+        // $(document).ready(function () {
+        //     "use strict";
+        //     var progressPath = document.querySelector('.progress-wrap path');
+        //     var pathLength = progressPath.getTotalLength();
+        //     progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+        //     progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+        //     progressPath.style.strokeDashoffset = pathLength;
+        //     progressPath.getBoundingClientRect();
+        //     progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+        //     var updateProgress = function () {
+        //         var scroll = $(window).scrollTop();
+        //         var height = $(document).height() - $(window).height();
+        //         var progress = pathLength - (scroll * pathLength / height);
+        //         progressPath.style.strokeDashoffset = progress;
+        //     }
+        //     updateProgress();
+        //     $(window).scroll(updateProgress);
+        //     var offset = 50;
+        //     var duration = 550;
+        //     jQuery(window).on('scroll', function () {
+        //         if (jQuery(this).scrollTop() > offset) {
+        //             jQuery('.progress-wrap').addClass('active-progress');
+        //         } else {
+        //             jQuery('.progress-wrap').removeClass('active-progress');
+        //         }
+        //     });
+        //     jQuery('.progress-wrap').on('click', function (event) {
+        //         event.preventDefault();
+        //         jQuery('html, body').animate({ scrollTop: 0 }, duration);
+        //         return false;
+        //     })
+        // });
+        $(document).ready(function () {
+            "use strict";
+            var progressPath = document.querySelector('.progress-wrap path');
+            if (progressPath) {
+                var pathLength = progressPath.getTotalLength();
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+                progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+                progressPath.style.strokeDashoffset = pathLength;
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+                var updateProgress = function () {
+                    var scroll = $(window).scrollTop();
+                    var height = $(document).height() - $(window).height();
+                    var progress = pathLength - (scroll * pathLength / height);
+                    progressPath.style.strokeDashoffset = progress;
+                };
+                updateProgress();
+                $(window).scroll(updateProgress);
+            }
+            var offset = 50;
+            var duration = 550;
+            jQuery(window).on('scroll', function () {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.progress-wrap').addClass('active-progress');
+                } else {
+                    jQuery('.progress-wrap').removeClass('active-progress');
+                }
+            });
+            jQuery('.progress-wrap').on('click', function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
             });
         });
+
+        //copy email
+        if (document.getElementById('copy-email')) {
+            document.getElementById('copy-email').addEventListener('click', function () {
+                var email = this.innerText;
+                navigator.clipboard.writeText(email).then(function () {
+                    var copyStatus = document.getElementById('copyStatus');
+                    var clickStatus = document.getElementById('clickStatus');
+                    copyStatus.style.display = 'inline';
+                    clickStatus.style.display = 'none';
+                    setTimeout(function () {
+                        copyStatus.style.display = 'none';
+                    }, 5000);
+                }).catch(function (err) {
+                    console.error('Could not copy text: ', err);
+                });
+            });
+        }
+        else {
+            console.log('function not working')
+        }
 
         //award hocer function
         $('.tab-link').on('mouseenter', function (event) {
@@ -443,12 +507,14 @@
 
         // Time
         const displayTime = document.querySelector(".display-time");
-        function showTime() {
-            let time = new Date();
-            displayTime.innerText = time.toLocaleTimeString("en-US", { hour12: false });
-            setTimeout(showTime, 1000);
+        if (displayTime) {
+            function showTime() {
+                let time = new Date();
+                displayTime.innerText = time.toLocaleTimeString("en-US", { hour12: false });
+                setTimeout(showTime, 1000);
+            }
+            showTime();
         }
-        showTime();
     });
 
     $(window).on('scroll', function () {

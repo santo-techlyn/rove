@@ -5978,4 +5978,98 @@ nav .main-menu li a {
   .error-area .error-content .error-text {
     font-size: 90px;
   }
+}
+
+.blok:nth-of-type(odd) {
+  background-color: white;
+}
+
+.blok:nth-of-type(even) {
+  background-color: black;
+}
+.paginacontainer .progress-wrap {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 200ms linear;
+}
+.paginacontainer .progress-wrap span {
+  position: absolute;
+  top: -6px;
+  left: 1px;
+  font-size: 45px;
+  transform: scale(1);
+  transition: all 0.3s ease-in;
+}
+.paginacontainer .progress-wrap:hover span {
+  transform: scale(0.8);
+  transition: all 0.3s ease-in;
+}
+.paginacontainer .progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.paginacontainer .progress-wrap::after {
+  position: absolute;
+  font-family: "unicons";
+  content: "";
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  transition: all 200ms linear;
+}
+.paginacontainer .progress-wrap:hover::after {
+  opacity: 0;
+}
+.paginacontainer .progress-wrap::before {
+  position: absolute;
+  font-family: "unicons";
+  content: "";
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  opacity: 0;
+  background: #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  transition: all 200ms linear;
+}
+.paginacontainer .progress-wrap:hover::before {
+  opacity: 1;
+}
+.paginacontainer .progress-wrap svg path {
+  fill: none;
+}
+.paginacontainer .progress-wrap svg.progress-circle path {
+  stroke: #6D6D6D;
+  /* --- Lijn progres kleur rgba(0, 0, 0, 0.945) --- */
+  stroke-width: 4;
+  box-sizing: border-box;
+  transition: all 200ms linear;
 }/*# sourceMappingURL=style.css.map */
